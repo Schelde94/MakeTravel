@@ -53,7 +53,7 @@
 
 						The Faroese education system is well developed, with free primary and secondary schooling for all and a number of institutions for higher education and research. Many Faroe Islanders choose to study and work abroad during their younger years before returning home to settle.
 						</p>
-						<div class="card-footer text-muted bg-dark text-white rounded-0">
+						<div class="card-footer text-muted bg-dark text-white rounded-0 text-center">
     						<p>Last updated: insert date</p>
   						</div>
 					</div>
@@ -62,7 +62,7 @@
 						<div class="embed-responsive embed-responsive-16by9">
   							<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/NhksvxPy1Pk?rel=0" allowfullscreen></iframe>
 						</div>
-						<div class="card-footer text-muted bg-dark text-white rounded-0">
+						<div class="card-footer text-muted bg-dark text-white rounded-0 text-center">
     						<p>Last updated: insert date</p>
   						</div>
 					</div>
@@ -70,7 +70,7 @@
 					<div class="tab-pane fade" id="map" role="tabpanel" aria-labelledby="map-tab">
 						<img src="img/kort.PNG" class="img-fluid" alt="Responsive image">
 						
-						<div class="card-footer text-muted bg-dark text-white rounded-0">
+						<div class="card-footer text-muted bg-dark text-white rounded-0 text-center">
     						<p>Last updated: insert date</p>
   						</div>
 					</div>
@@ -162,7 +162,7 @@
 						IBAN: FO4791810004508388<br>
 						Swift: EIKB FO TF<br><br>	
 						</p>
-						<div class="card-footer text-muted bg-dark text-white rounded-0">
+						<div class="card-footer text-muted bg-dark text-white rounded-0 text-center">
     						<p>Last updated: insert date</p>
   						</div>
 					</div>

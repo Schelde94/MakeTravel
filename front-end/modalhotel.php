@@ -22,9 +22,9 @@
 				<p class="card-text ml-1"><strong>Reservation number:</strong> 3213543543 </p>
 				<p class="card-text ml-1"><strong>Check in:</strong> 01/12/18</p>
 				<p class="card-text ml-1"><strong>Check out:</strong> 05/12/18</p>
-      			<a href="#" class="btn btn-success btn-sm ml-1 mb-3">See Voucher</a>
+      			<a href="#" class="btn btn-success btn-sm ml-1 mb-3 rounded-0">See Voucher</a>
   			</div>
-  			<div class="card-footer text-muted bg-light rounded-0">
+  			<div class="card-footer text-muted bg-light rounded-0 text-center">
     			<p>Last updated: insert date</p>
   			</div>
 		</div>
@@ -45,7 +45,7 @@
 							<p class="card-text ml-1"><strong>Reservation number:</strong> 3213543543 </p>
 							<p class="card-text ml-1"><strong>Check in:</strong> 01/12/18</p>
 							<p class="card-text ml-1"><strong>Check out:</strong> 05/12/18</p>
-      						<a href="#" class="btn btn-success btn-sm ml-1 mb-3">See Voucher</a>
+      						<a href="#" class="btn btn-success btn-sm ml-1 mb-3 rounded-0">See Voucher</a>
                 		</div>
             		</div>
  					<div class="col-7">
@@ -66,7 +66,7 @@
     			<p class="card-text ml-1 lead">If you have a request for accomodation, Make Travel can help you and guarantee the best personal service.</p>
 				<p class="card-text ml-1 lead"><strong>If you need any information or guidance on accommodation, then please contact us at <a href="mailto:make@make.fo">make@make.fo</a>  or by telephone: +298 232100 (FO) / +45 27771234 (DK)</strong></p>
   			</div>
-  			<div class="card-footer text-muted bg-light">
+  			<div class="card-footer text-muted bg-light text-center">
     			<p>Make Travel</p>
   			</div>
 		</div>

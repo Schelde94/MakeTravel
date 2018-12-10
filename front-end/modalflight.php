@@ -21,9 +21,9 @@
 				<p class="card-text ml-1"><strong>From:</strong> Copenhagen  <strong>To:</strong> Faroe Islands</p>
 				<p class="card-text ml-1"><strong>Departure:</strong> 11.30 01/12/18</p>
 				<p class="card-text ml-1"><strong>Arrival:</strong> 12.30 01/12/18</p>
-      			<a href="#" class="btn btn-success btn-sm ml-1 mb-3">See Tickets</a>
+      			<a href="#" class="btn btn-success btn-sm ml-1 mb-3 rounded-0">See Tickets</a>
   			</div>
-  			<div class="card-footer text-muted bg-dark text-white rounded-0">
+  			<div class="card-footer text-muted bg-dark text-white rounded-0 text-center">
     			<p>Last updated: insert date</p>
   			</div>
 		</div>

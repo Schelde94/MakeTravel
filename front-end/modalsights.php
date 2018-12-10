@@ -24,7 +24,7 @@
 						<p class="card-text ml-1"><strong>Reservation number:</strong> 3213543543 </p>
 						<p class="card-text ml-1"><strong>Departure:</strong> 09.30 04/12/18</p>
 						<p class="card-text ml-1"><strong>Arrival:</strong> 14.30 04/12/18</p>
-      					<a href="#" class="btn btn-success btn-sm ml-1 mb-3">See Voucher</a>
+      					<a href="#" class="btn btn-success btn-sm ml-1 mb-3 rounded-0">See Voucher</a>
                 	</div>
             	</div>
  				<div class="col-7">
@@ -46,7 +46,7 @@
 				<p class="card-text ml-1 lead">Do you have questions or are in need of inspiration to a new adventure, then let Make Travel help you.</p>
 				<p class="card-text ml-1 lead"><strong>Get in touch by emailing us here:<a href="mailto: make@make.fo"> make@make.fo</a> or by telephone: +298 232100 (FO) / +45 27771234 (DK)</strong></p>
   			</div>
-  			<div class="card-footer text-muted bg-dark text-white">
+  			<div class="card-footer text-muted bg-dark text-white text-center">
     			<p>Make Travel</p>
   			</div>
 		</div>

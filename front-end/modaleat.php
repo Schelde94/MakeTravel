@@ -23,7 +23,7 @@
 							<a href="#"><p class="card-text ml-1">Læs mere om restauranten her LINK</p></a>
 							<p class="card-text ml-1"><strong>Reservation number:</strong> 3213543543 </p>
 							<p class="card-text ml-1"><strong>Arrival:</strong> 18.30 02/12/18</p>
-      						<a href="#" class="btn btn-success btn-sm ml-1 mb-3">See Voucher</a>
+      						<a href="#" class="btn btn-success btn-sm ml-1 mb-3 rounded-0">See Voucher</a>
                 		</div>
             		</div>
  					<div class="col-7">
@@ -47,7 +47,7 @@
 							<a href="#"><p class="card-text ml-1">Læs mere om restauranten her LINK</p></a>
 							<p class="card-text ml-1"><strong>Reservation number:</strong> 3213543543 </p>
 							<p class="card-text ml-1"><strong>Arrival:</strong> 18.30 02/12/18</p>
-      						<a href="#" class="btn btn-success btn-sm ml-1 mb-3">See Voucher</a>
+      						<a href="#" class="btn btn-success btn-sm ml-1 mb-3 rounded-0">See Voucher</a>
                 		</div>
             		</div>
  					<div class="col-7">
