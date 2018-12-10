@@ -5,6 +5,7 @@
  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">	
 <title>Make Travel Companion</title>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">	
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 	
 <link rel="stylesheet" href="styles.css">	
 
@@ -23,7 +24,7 @@
 			<p class="lead text-center text-white mb-4 mt-4">All your files are inlcuded in the sections below.<br>Click on the sections to see vouchers and more detailed information.</p>
 		</div>
 		
-		<div class="row justify-content-around">
+		<div class="row justify-content-around align-content-around">
 		<div class="card-deck">
 			<div class="card bg-white text-white mb-5 rounded-0" id="fly">
  		 		<button type="button" class="btn bg-white rounded-0" data-toggle="modal" data-target=".fly"><img class="card-img rounded-0" src="img/boarding.PNG" alt="Flight information"></button>	
@@ -47,8 +48,8 @@
 			<div class="card bg-white text-white mb-5 rounded-0" id="spise">
  		 		<button type="button" class="btn bg-white rounded-0" data-toggle="modal" data-target=".eat"><img class="card-img rounded-0" src="img/spise.PNG" alt="Eating information"></button>		
 			</div>
-			<div class="card bg-white text-white mb-5 rounded-0" id="andet">
- 		 		<button type="button" class="btn bg-white rounded-0" data-toggle="modal" data-target=".other"><img class="card-img rounded-0" src="img/generelt.PNG" alt="Other information"></button>		
+			<div class="card bg-white text-white mb-5 rounded-0" id="alarm">
+ 		 		<button type="button" class="btn bg-white rounded-0" data-toggle="modal" data-target=".emergency"><img class="card-img rounded-0" src="img/generelt.PNG" alt="Emergency information"></button>		
 			</div>
 			<div class="card bg-white text-white mb-5 rounded-0" id="generelt">
  		 		<button type="button" class="btn bg-white rounded-0" data-toggle="modal" data-target=".general"><img class="card-img rounded-0" src="img/generelt.PNG" alt="General information"></button>		
@@ -82,7 +83,7 @@
 <!-- modal eating END -->
 
 <!-- modal other -->		
-<?php include 'modalother.php';?>
+<?php include 'modalemergency.php';?>
 <!-- modal other END -->
 		
 <!-- modal general -->		
