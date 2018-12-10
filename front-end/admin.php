@@ -7,7 +7,8 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">	
 <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 <link rel="stylesheet" href="/resources/demos/style.css">
-
+<link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
+	
 <link rel="stylesheet" href="styles.css">	
 
 	
@@ -162,7 +163,7 @@
 	
 	<div class="container-fluid bg-dark mt-3 mb-5">
 		<div class="row justify-content-center">
-			<h1 class="display-4"><strong>make</strong>travel</h1>
+			<h1 class=""><strong>make</strong>travel</h1>
 		</div>
 	</div>
 

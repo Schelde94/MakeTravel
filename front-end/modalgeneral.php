@@ -10,11 +10,11 @@
         </button>
       </div>
 		
-      <div class="modal-body">
+      <div class="modal-body bg-white">
       	<div class="card text-start">
 			<img class="card-img-top img-fluid rounded-0" id="flight" src="img/general.PNG" alt="Card image cap">
   			<div class="card-header">
-    			<h3 class="card-title">Your booking</h3>
+    			<h3 class="card-title"></h3>
 				<ul class="nav nav-tabs" id="myTab" role="tablist">
   					<li class="nav-item">
     					<a class="nav-link active" id="general-tab" data-toggle="tab" href="#general" role="tab" aria-controls="general" aria-selected="true">General</a>
@@ -29,9 +29,9 @@
     					<a class="nav-link" id="terms-tab" data-toggle="tab" href="#terms" role="tab" aria-controls="terms" aria-selected="false">Terms & Conditions</a>
   					</li>
 				</ul>
-				<div class="tab-content" id="myTabContent">
+				<div class="tab-content bg-white" id="myTabContent">
   					<div class="tab-pane fade show active" id="general" role="tabpanel" aria-labelledby="general-tab">
-						<p>“The Faroe Islands? Yeah, they are close to Egypt, right?”<br><br>
+						<p class="col-auto">“The Faroe Islands? Yeah, they are close to Egypt, right?”<br><br>
 
 						…not exactly.<br><br>
 
@@ -53,30 +53,29 @@
 
 						The Faroese education system is well developed, with free primary and secondary schooling for all and a number of institutions for higher education and research. Many Faroe Islanders choose to study and work abroad during their younger years before returning home to settle.
 						</p>
-						<div class="card-footer text-muted bg-dark text-white rounded-0 text-center">
+						<div class="card-footer text-muted bg-light rounded-0 text-center">
     						<p>Last updated: insert date</p>
   						</div>
 					</div>
 					
   					<div class="tab-pane fade" id="driving" role="tabpanel" aria-labelledby="driving-tab">
-						<div class="embed-responsive embed-responsive-16by9">
+						<div class="embed-responsive embed-responsive-16by9 mt-5 mb-5">
   							<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/NhksvxPy1Pk?rel=0" allowfullscreen></iframe>
 						</div>
-						<div class="card-footer text-muted bg-dark text-white rounded-0 text-center">
+						<div class="card-footer text-muted bg-light rounded-0 text-center">
     						<p>Last updated: insert date</p>
   						</div>
 					</div>
 					
 					<div class="tab-pane fade" id="map" role="tabpanel" aria-labelledby="map-tab">
-						<img src="img/kort.PNG" class="img-fluid" alt="Responsive image">
-						
-						<div class="card-footer text-muted bg-dark text-white rounded-0 text-center">
+						<img src="img/kort.PNG" class="img-fluid mt-5 mb-5" alt="Responsive image">
+						<div class="card-footer text-muted bg-light rounded-0 text-center">
     						<p>Last updated: insert date</p>
   						</div>
 					</div>
 					
   					<div class="tab-pane fade" id="terms" role="tabpanel" aria-labelledby="terms-tab">
-						<p>
+						<p class="col-auto">
 						Individual travellers<br><br>
 
 						These are the terms and conditions you use when trading with Make Travel<br><br>
@@ -162,7 +161,7 @@
 						IBAN: FO4791810004508388<br>
 						Swift: EIKB FO TF<br><br>	
 						</p>
-						<div class="card-footer text-muted bg-dark text-white rounded-0 text-center">
+						<div class="card-footer text-muted bg-light rounded-0 text-center">
     						<p>Last updated: insert date</p>
   						</div>
 					</div>

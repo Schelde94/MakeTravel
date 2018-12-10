@@ -36,7 +36,7 @@
 				Stay safe and enjoy exploring the Faroe Islands!<br>
 				</p>
   			</div>
-  			<div class="card-footer text-muted bg-dark text-white rounded-0 text-center">
+  			<div class="card-footer text-muted bg-light rounded-0 text-center">
     			<p>Last updated: insert date</p>
   			</div>
 		</div>

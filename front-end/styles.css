@@ -5,6 +5,7 @@ html, body {
 	padding: 0 !important;
 	background: #006533!important;
 	overflow-x: hidden;
+	font-family: 'Exo 2', sans-serif;
 }
 .container-fluid {
 	background: #006533 !important;
@@ -21,6 +22,7 @@ html, body {
 }
 .ui-accordion {
 	border: none!important;
+	font-family: 'Exo 2', sans-serif;
 }
 .ui-accordion-header-active {
 	color: white;
