@@ -23,7 +23,7 @@
 				<p class="card-text ml-1"><strong>Arrival:</strong> 12.30 01/12/18</p>
       			<a href="#" class="btn btn-success btn-sm ml-1 mb-3 rounded-0">See Tickets</a>
   			</div>
-  			<div class="card-footer text-muted bg-dark text-white rounded-0 text-center">
+  			<div class="card-footer text-muted bg-light rounded-0 text-center">
     			<p>Last updated: insert date</p>
   			</div>
 		</div>
