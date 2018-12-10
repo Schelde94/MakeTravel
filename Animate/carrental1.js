@@ -84,25 +84,21 @@ p.nominalBounds = new cjs.Rectangle(0,0,1000,1158);
 	this.shape_14.setTransform(189.5,146);
 
 	this.shape_15 = new cjs.Shape();
-	this.shape_15.graphics.f().s("#000000").ss(1,1,1).p("AU+rbIAAAcMgqHAAAIAAgcADsJtIESAAIAAA3IAAA4Ii2AAIhcAAgA0+rbMAp8AAAIAMAA");
-	this.shape_15.setTransform(188.9,119.4);
+	this.shape_15.graphics.f().s("#000000").ss(1,1,1).p("AU+qsIAAAcMgqHAAAIAAgcADsKsIAAgQA0+qsMAp8AAAIAMAA");
+	this.shape_15.setTransform(188.9,114.7);
 
 	this.shape_16 = new cjs.Shape();
-	this.shape_16.graphics.f("#FFCC00").s().p("AlEBKIivAAIAAhMIAAhHIEpAAIAACTgAE+AlIhcAAIAAhuIESAAIAAA4IAAA2g");
-	this.shape_16.setTransform(189.9,188.8);
+	this.shape_16.graphics.f("#FFCC00").s().p("AnMBKIAAiTIEpAAIAACTgAC7A2IAAhuIBOAAIDEAAIAABug");
+	this.shape_16.setTransform(186,188.8);
 
-	this.shape_17 = new cjs.Shape();
-	this.shape_17.graphics.f("#FFFFFF").s().p("A9mW0MAAAgtnMA7NAAAMAAAAtngADmHRIBcAAIAAB7IEuAAIAAiyIh4AAIAAg4IkSAAgAppI8IEpAAIAAhGIB7AAIAAiUIkqAAIAABHIh6AAgA1PvJMAqIAAAIAAgcIALAAIgLAAMgp8AAAIgMAAg");
-	this.shape_17.setTransform(189.5,146);
-
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_11},{t:this.shape_10},{t:this.shape_9},{t:this.shape_8},{t:this.shape_7},{t:this.shape_6},{t:this.shape_5},{t:this.shape_4},{t:this.shape_3},{t:this.shape_2},{t:this.shape_1},{t:this.shape},{t:this.instance,p:{scaleX:0.133,scaleY:0.133,x:123,y:83.6}}]}).to({state:[{t:this.shape_14},{t:this.shape_10},{t:this.shape_13},{t:this.shape_12},{t:this.shape_8},{t:this.shape_7},{t:this.shape_6},{t:this.shape_5},{t:this.shape_4},{t:this.shape_3},{t:this.shape_2},{t:this.shape_1},{t:this.shape},{t:this.instance,p:{scaleX:0.133,scaleY:0.133,x:123,y:83.6}}]},1).to({state:[{t:this.shape_17},{t:this.shape_10},{t:this.shape_16},{t:this.shape_15},{t:this.shape_8},{t:this.shape_7},{t:this.shape_6},{t:this.shape_5},{t:this.shape_4},{t:this.shape_3},{t:this.shape_2},{t:this.shape_1},{t:this.shape},{t:this.instance,p:{scaleX:0.097,scaleY:0.097,x:141,y:105}}]},1).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_11},{t:this.shape_10},{t:this.shape_9},{t:this.shape_8},{t:this.shape_7},{t:this.shape_6},{t:this.shape_5},{t:this.shape_4},{t:this.shape_3},{t:this.shape_2},{t:this.shape_1},{t:this.shape},{t:this.instance,p:{scaleX:0.133,scaleY:0.133,x:123,y:83.6}}]}).to({state:[{t:this.shape_14},{t:this.shape_10},{t:this.shape_13},{t:this.shape_12},{t:this.shape_8},{t:this.shape_7},{t:this.shape_6},{t:this.shape_5},{t:this.shape_4},{t:this.shape_3},{t:this.shape_2},{t:this.shape_1},{t:this.shape},{t:this.instance,p:{scaleX:0.133,scaleY:0.133,x:123,y:83.6}}]},1).to({state:[{t:this.shape_10},{t:this.shape_16},{t:this.shape_15},{t:this.shape_8},{t:this.shape_7},{t:this.shape_6},{t:this.shape_5},{t:this.shape_4},{t:this.shape_3},{t:this.shape_2},{t:this.shape_1},{t:this.shape},{t:this.instance,p:{scaleX:0.097,scaleY:0.097,x:137,y:108}}]},1).wait(1));
 
 }).prototype = p = new cjs.MovieClip();
 p.nominalBounds = new cjs.Rectangle(0,0,379,292);
 
 
 // stage content:
-(lib.carrental = function(mode,startPosition,loop) {
+(lib.carrental1 = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
 
 	// Layer_1
