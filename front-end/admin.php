@@ -158,7 +158,13 @@
 			
 			<button type="submit" class="btn btn-dark btn-block mt-3 rounded-0">Submit</button>
 		</form>
-	</div>	
+	</div>
+	
+	<div class="container-fluid bg-dark mt-3 mb-5">
+		<div class="row justify-content-center">
+			<h1 class="display-4"><strong>make</strong>travel</h1>
+		</div>
+	</div>
 
  	
 		

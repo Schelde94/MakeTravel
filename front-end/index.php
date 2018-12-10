@@ -21,7 +21,7 @@
 		
 	<div class="container-fluid bg-success">
 		<div class="row justify-content-around">
-			<p class="lead text-center text-white mb-4 mt-4">All your files are inlcuded in the sections below.<br>Click on the sections to see vouchers and more detailed information.</p>
+			<p class="lead text-center col-sm text-white mb-4 mt-4">All your files are inlcuded in the sections below.<br>Click on the sections to see vouchers and more detailed information.</p>
 		</div>
 		
 		<div class="row justify-content-around align-content-around">
@@ -55,6 +55,15 @@
  		 		<button type="button" class="btn bg-white rounded-0" data-toggle="modal" data-target=".general"><img class="card-img rounded-0" src="img/generelt.PNG" alt="General information"></button>		
 			</div>
 		</div>
+		</div>
+	</div>
+	
+	<div class="container-fluid bg-dark mt-3 mb-5">
+		<div class="row justify-content-center">
+			<h1 class="display-4"><strong>make</strong>travel</h1>
+		</div>
+		<div class="row justify-content-center">
+			<p class="lead">Tel. +298 232100</p>
 		</div>
 	</div>
 
