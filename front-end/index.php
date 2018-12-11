@@ -28,32 +28,32 @@
 		<div class="row justify-content-around align-content-around">
 		<div class="card-deck">
 			<div class="card bg-white text-white mb-5 rounded-0" id="fly">
- 		 		<button type="button" class="btn bg-white rounded-0" data-toggle="modal" data-target=".fly"><img class="card-img rounded-0" src="img/boarding.PNG" alt="Flight information"></button>	
+ 		 		<button type="button" class="btn bg-white rounded-0" data-toggle="modal" data-target=".fly"><img class="card-img rounded-0" src="img/icons/flight_atlas_sm.png" alt="Flight information"></button>	
 			</div>
 			<div class="card bg-white text-white mb-5 rounded-0" id="hotel">
- 		 		<button type="button" class="btn bg-white rounded-0" data-toggle="modal" data-target=".hotel"><img class="card-img rounded-0" src="img/hotel.PNG" alt="Hotel information"></button>	
+ 		 		<button type="button" class="btn bg-white rounded-0" data-toggle="modal" data-target=".hotel"><img class="card-img rounded-0" src="img/icons/hotel_atlas_sm.png" alt="Hotel information"></button>	
 			</div>
 			<div class="card  bg-white text-white mb-5 rounded-0" id="bil">
- 		 		<button type="button" class="btn bg-white rounded-0" data-toggle="modal" data-target=".car"><img class="card-img rounded-0" src="img/billeje.PNG" alt="Car rental information"></button>		
+ 		 		<button type="button" class="btn bg-white rounded-0" data-toggle="modal" data-target=".car"><img class="card-img rounded-0" src="img/icons/billejelogo_sm.png" alt="Car rental information"></button>		
 			</div>
 			<div class="card bg-white text-white mb-5 rounded-0" id="oplevelser">
- 		 		<button type="button" class="btn bg-white rounded-0" data-toggle="modal" data-target=".sights"><img class="card-img rounded-0" src="img/oplevelser.PNG" alt="Experiences information"></button>		
+ 		 		<button type="button" class="btn bg-white rounded-0" data-toggle="modal" data-target=".sights"><img class="card-img rounded-0" src="img/icons/excursion_atlas_sm.png" alt="Experiences information"></button>		
 			</div>
 		</div>
 		</div>
 		<div class="row justify-content-around">
 		<div class="card-deck">
 			<div class="card bg-white text-white mb-5 rounded-0" id="transport">
- 		 		<button type="button" class="btn bg-white rounded-0" data-toggle="modal" data-target=".transport"><img class="card-img rounded-0" src="img/billeje.PNG" alt="Transportation information"></button>
+ 		 		<button type="button" class="btn bg-white rounded-0" data-toggle="modal" data-target=".transport"><img class="card-img rounded-0" src="img/icons/transport_atlas_sm.png" alt="Transportation information"></button>
 			</div>
 			<div class="card bg-white text-white mb-5 rounded-0" id="spise">
- 		 		<button type="button" class="btn bg-white rounded-0" data-toggle="modal" data-target=".eat"><img class="card-img rounded-0" src="img/spise.PNG" alt="Eating information"></button>		
+ 		 		<button type="button" class="btn bg-white rounded-0" data-toggle="modal" data-target=".eat"><img class="card-img rounded-0" src="img/icons/dining_atlas_sm.png" alt="Eating information"></button>		
 			</div>
 			<div class="card bg-white text-white mb-5 rounded-0" id="alarm">
- 		 		<button type="button" class="btn bg-white rounded-0" data-toggle="modal" data-target=".emergency"><img class="card-img rounded-0" src="img/generelt.PNG" alt="Emergency information"></button>		
+ 		 		<button type="button" class="btn bg-white rounded-0" data-toggle="modal" data-target=".emergency"><img class="card-img rounded-0" src="img/icons/emergency_atlas_sm.png" alt="Emergency information"></button>		
 			</div>
 			<div class="card bg-white text-white mb-5 rounded-0" id="generelt">
- 		 		<button type="button" class="btn bg-white rounded-0" data-toggle="modal" data-target=".general"><img class="card-img rounded-0" src="img/generelt.PNG" alt="General information"></button>		
+ 		 		<button type="button" class="btn bg-white rounded-0" data-toggle="modal" data-target=".general"><img class="card-img rounded-0" src="img/icons/information_atlas_sm.png" alt="General information"></button>		
 			</div>
 		</div>
 		</div>
