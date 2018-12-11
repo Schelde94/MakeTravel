@@ -3,22 +3,24 @@
 html, body {
   	margin: 0 !important;
 	padding: 0 !important;
-	background: #006533!important;
+	/*background: #006533!important;*/
 	overflow-x: hidden;
-	font-family: 'Exo 2', sans-serif;
+	font-family: 'Exo 2', sans-serif!important;
+	background: #008742 !important; /* fallback color */
+	background: linear-gradient(to bottom, #008742 0%, #006533 100%)!important;
+	background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
 }
-.container-fluid {
-	background: #006533 !important;
-	padding: 0;
-}
-.container {
-	overflow-x: hidden;
+.logoname {
+	font-weight: 300!important;
 }
 .bg-white {
 	background: white!important;
 }
 .bg-success {
-	background: #006533 !important;
+	background: #008742 !important;
 }
 .ui-accordion {
 	border: none!important;
@@ -29,7 +31,6 @@ html, body {
 	background: #343a40;
 	border: none!important;
 }
-
 
 #myBtn {
   display: none; /* Hidden by default */
