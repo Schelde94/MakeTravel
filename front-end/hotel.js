@@ -11,7 +11,7 @@ lib.ssMetadata = [
 
 
 
-(lib.hotelåbenpngcopy = function() {
+(lib.hotelåbenpngcopy = function() {
 	this.spriteSheet = ss["hotel_atlas_"];
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
@@ -65,7 +65,7 @@ lib.ssMetadata = [
 	this.shape_7.graphics.f("#FFFFFF").s().p("A9mW0MAAAgtnMA7NAAAMAAAAtngA1PvJMAqIAAAIAAgcIALAAIgLAAMgp8AAAIgMAAg");
 	this.shape_7.setTransform(189.5,146);
 
-	this.instance_1 = new lib.hotelåbenpngcopy();
+	this.instance_1 = new lib.hotelåbenpngcopy();
 	this.instance_1.parent = this;
 	this.instance_1.setTransform(126,89,0.127,0.127);
 
@@ -126,7 +126,7 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"img/hotel_atlas_.png", id:"hotel_atlas_"}
+		{src:"images/hotel_atlas_.png?1544435548816", id:"hotel_atlas_"}
 	],
 	preloads: []
 };
