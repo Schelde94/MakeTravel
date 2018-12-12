@@ -67,3 +67,12 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+var i = 0;
+var myImg = document.getElementById("imgcar");
+    
+	function zoomin(){
+
+       i++;
+       myImg.style.transform = "scale(1."+ i +")";
+    }
