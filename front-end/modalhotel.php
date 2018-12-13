@@ -17,7 +17,6 @@
   			</div>
   			<div class="card-body">
     			<p class="card-text ml-1"><strong>Address:</strong> Oyggjarvegur 45, 100 Tórshavn</p>
-				<p class="card-text ml-1"><strong>Reservation number:</strong> 3213543543 </p>
 				<p class="card-text ml-1"><strong>Check in date:</strong> 01/12/18 &nbsp;<strong>Check out date:</strong> 05/12/18</p>
 				<p class="card-text ml-1">Hotel Føroyar is the biggest in the Faroe Islands. It has 106 rooms, and all have a great view voer Tórshavn, N+olsoy and the North Atlantic Sea.</p>
 				<p class="card-text ml-1">98 of the 106 are double standard rooms, 2 are family rooms, 2 are

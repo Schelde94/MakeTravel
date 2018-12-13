@@ -3,63 +3,40 @@
 <head>
 <meta charset="utf-8">
  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">	
-<title>Make Travel Companion</title>
+<title>Make Travel Admin</title>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">	
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="/resources/demos/style.css">
 <link href="https://fonts.googleapis.com/css?family=Exo+2:300,400,500,700" rel="stylesheet">
 	
-<link rel="stylesheet" href="styles.css">	
-
+<link rel="stylesheet" href="styles.css">
+	
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	
 </head>
 
 <body>
-	<div class="container-fluid bg-white">
+	<div class="container-fluid bg-white mb-5">
 		<div class="row justify-content-center">
-			<img class="mb-4 mt-4 img-fluid d-none d-sm-block" src="img/logo.png" alt="Make Travel Logo">
-			<img class="mb-4 mt-4 img-fluid d-sm-none" src="img/logo-sm.png" alt="Make Travel Logo">
-		</div>
-	</div>
-		
-	<div class="container-fluid">
-		<div class="row justify-content-around">
-			<p class="lead text-center col-sm text-white mb-4 mt-4">All your files are inlcuded in the sections below.<br>Click on the sections to see vouchers and more detailed information.</p>
-		</div>
-		
-		<div class="row justify-content-around align-content-around">
-		<div class="card-deck">
-			<div class="card bg-white text-white mb-5 rounded-0" id="fly">
- 		 		<button type="button" class="btn bg-white rounded-0" data-toggle="modal" data-target=".fly"><img class="card-img rounded-0" src="img/icons/flight1.png" onmouseover="this.src='img/icons/flight2.png'" onmouseout="this.src='img/icons/flight1.png'" alt="Flight information"></button>	
-			</div>
-			<div class="card bg-white text-white mb-5 rounded-0" id="hotel">
- 		 		<button type="button" class="btn bg-white rounded-0" data-toggle="modal" data-target=".hotel"><img class="card-img rounded-0" src="img/icons/hotel1.png" onmouseover="this.src='img/icons/hotel2.png'" onmouseout="this.src='img/icons/hotel1.png'" alt="Hotel information"></button>	
-			</div>
-			<div class="card  bg-white text-white mb-5 rounded-0" id="bil">
- 		 		<button type="button" class="btn bg-white rounded-0" data-toggle="modal" data-target=".car"><img class="card-img rounded-0" src="img/icons/carrental1.png" onmouseover="this.src='img/icons/carrental2.png'" onmouseout="this.src='img/icons/carrental1.png'" alt="Car rental information" id="imgcar"></button>		
-			</div>
-			<div class="card bg-white text-white mb-5 rounded-0" id="oplevelser">
- 		 		<button type="button" class="btn bg-white rounded-0" data-toggle="modal" data-target=".sights"><img class="card-img rounded-0" src="img/icons/excursion1.png" onmouseover="this.src='img/icons/excursion2.png'" onmouseout="this.src='img/icons/excursion1.png'" alt="Experiences information"></button>		
-			</div>
-		</div>
-		</div>
-		<div class="row justify-content-around">
-		<div class="card-deck">
-			<div class="card bg-white text-white mb-5 rounded-0" id="transport">
- 		 		<button type="button" class="btn bg-white rounded-0" data-toggle="modal" data-target=".transport"><img class="card-img rounded-0" src="img/icons/transport1.png" onmouseover="this.src='img/icons/transport2.png'" onmouseout="this.src='img/icons/transport1.png'" alt="Transportation information"></button>
-			</div>
-			<div class="card bg-white text-white mb-5 rounded-0" id="spise">
- 		 		<button type="button" class="btn bg-white rounded-0" data-toggle="modal" data-target=".eat"><img class="card-img rounded-0" src="img/icons/dining1.png" onmouseover="this.src='img/icons/dining2.png'" onmouseout="this.src='img/icons/dining1.png'" alt="Eating information"></button>		
-			</div>
-			<div class="card bg-white text-white mb-5 rounded-0" id="alarm">
- 		 		<button type="button" class="btn bg-white rounded-0" data-toggle="modal" data-target=".emergency"><img class="card-img rounded-0" src="img/icons/emergency1.png" onmouseover="this.src='img/icons/emergency2.png'" onmouseout="this.src='img/icons/emergency1.png'" alt="Emergency information"></button>		
-			</div>
-			<div class="card bg-white text-white mb-5 rounded-0" id="generelt">
- 		 		<button type="button" class="btn bg-white rounded-0" data-toggle="modal" data-target=".general"><img class="card-img rounded-0" src="img/icons/generelt1.png" onmouseover="this.src='img/icons/generelt2.png'" onmouseout="this.src='img/icons/generelt1.png'" alt="General information"></button>		
-			</div>
-		</div>
+			<img class="mb-4 mt-4 img-fluid d-none d-sm-block" src="img/logo.png">
+			<img class="mb-4 mt-4 img-fluid d-sm-none" src="img/logo-sm.png">
 		</div>
 	</div>
 	
-	<div class="container-fluid mt-3 mb-5">
+	<div class="container mb-5">
+		<form>
+  			<div class="form-group row">
+    			<label for="inputEmail3" class="col-sm-2 col-form-label text-white mt-5">Customer number</label>
+    			<div class="col-sm-8">
+      			<input type="number" class="form-control mt-5 rounded-0" id="inputEmail3" placeholder="Write your customer number here!">
+    			</div>
+				<button type="submit" class="btn btn-dark col-sm-8 col-md mx-auto mt-5 rounded-0">Enter</button>
+  			</div>
+		</form>
+	</div>
+	
+	<div class="container-fluid mt-5 mb-5">
 		<div class="row justify-content-center">
 			<h1 class="logoname"><strong>make</strong>travel</h1>
 		</div>
@@ -68,48 +45,12 @@
 		</div>
 	</div>
 
-<!-- modal flight -->		
-<?php include 'modalflight.php';?>
-<!-- modal flight END -->
+ 	
 		
-<!-- modal hotel -->		
-<?php include 'modalhotel.php';?>
-<!-- modal hotel END -->		
-		
-<!-- modal carrental -->		
-<?php include 'modalcar.php';?>
-<!-- modal carrental END -->
-		
-<!-- modal sights -->		
-<?php include 'modalsights.php';?>
-<!-- modal sights END -->
-		
-<!-- modal transport -->		
-<?php include 'modaltransport.php';?>
-<!-- modal transport END -->
-		
-<!-- modal eating -->		
-<?php include 'modaleat.php';?>
-<!-- modal eating END -->
-
-<!-- modal other -->		
-<?php include 'modalemergency.php';?>
-<!-- modal other END -->
-		
-<!-- modal general -->		
-<?php include 'modalgeneral.php';?>
-<!-- modal general END -->			
-
-	
-<button onclick="topFunction()" class="bg-dark rounded-0" id="myBtn" title="Go to top">Top</button>	
-
-	
 	
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-
-<script src="scripts.js"></script>	
-	
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>	
+<script src="scripts.js"></script>
 </body>
 </html>

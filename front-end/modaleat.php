@@ -17,7 +17,6 @@
     			<h3 class="card-title">KOKS</h3>
   			</div>
   			<div class="card-body">
-				<p class="card-text ml-1 mt-4"><strong>Reservation number:</strong> 3213543543 </p>
 				<p class="card-text ml-1"><strong>Arrival:</strong> 18.30 - 01/12/18</p>
     			<p class="card-text ml-1">Widely regarded as the best restaurant in the Faroe Islands, Michelin star restaurant KOKS offers the complete fine dining experience.</p>
 				<p class="card-text ml-1">
@@ -30,26 +29,6 @@
 				Simple and pure, fresh and traditional.<br><br>
 
 				Fun fact: In 2015, KOKS won the The Nordic Prize for best restaurant in the Nordic countries and in 2017 was awarded a Michelin star, the first for a Faroese restaurant. It has retained its star for 2018.</p>
-				<a href="#" class="btn btn-success btn-sm ml-1 mb-3 rounded-0">See Voucher</a>
-  			</div>
-  			<div class="card-footer text-muted bg-light text-center">
-    			<p>Last updated: insert date</p>
-  			</div>
-		</div>
-      </div>
-		
-	  <div class="modal-body">
-      	<div class="card text-center">
-			<img class="card-img-top img-fluid rounded-0" id="car" src="content/dining/barbara-fish-house_sm.png" alt="Card image cap">
-  			<div class="card-header bg-dark text-white">
-    			<h3 class="card-title">BARBARA FISH HOUSE</h3>
-  			</div>
-  			<div class="card-body">
-				<p class="card-text ml-1 mt-4"><strong>Reservation number:</strong> 3213543543 </p>
-				<p class="card-text ml-1"><strong>Arrival:</strong> 18.30 - 01/12/18</p>
-    			<p class="card-text ml-1">If you want to try Faroese seafood, Barbara is the place to go.</p>
-				<p class="card-text ml-1">
-				Barbara Fish House, located in a cute house cut into the rocks, has a fantastic tasting menu, consisting of locally-caught Faroese seafood such as horse mussels and smoked salmon, fresh scallops and Bouillabaise poured from a teapot.</p>
 				<a href="#" class="btn btn-success btn-sm ml-1 mb-3 rounded-0">See Voucher</a>
   			</div>
   			<div class="card-footer text-muted bg-light text-center">

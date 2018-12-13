@@ -16,7 +16,6 @@
     			<h3 class="card-title">Citroen C3 or similar</h3>
   			</div>
   			<div class="card-body">
-				<p class="card-text ml-1 mt-4"><strong>Reservation number:</strong> 3213543543 </p>
 				<p class="card-text ml-1"><strong>Pick up:</strong> 12.30 - 01/12/18 &nbsp;<strong>Drop off:</strong> 12.30 - 05/12/18</p>
     			<p class="card-text ml-1">4-5 passengers, trunk 300/922 l, manual gear, airbags, abs and 5 doors</p>
 				<p class="card-text ml-1"><strong>Price includes:</strong> &nbsp;Free kilometer, hull and personal insurance, 25% VAT<br></p>
