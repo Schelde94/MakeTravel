@@ -68,7 +68,7 @@
 					</div>
 					
 					<div class="tab-pane fade" id="map" role="tabpanel" aria-labelledby="map-tab">
-						<div class="col embed-responsive" id="kort" style="height: 400px"></div>
+						<img src="img/kort.PNG" class="img-fluid mt-5 mb-5" alt="Responsive image">
 						<div class="card-footer text-muted bg-light rounded-0 text-center">
     						<p>Last updated: insert date</p>
   						</div>

@@ -32,18 +32,6 @@ html, body {
 	border: none!important;
 }
 
-a {
-    color: inherit!important;
-    text-decoration: none!important;
-}
-
-a:hover 
-{
-     color:white!important; 
-     text-decoration:none!important; 
-     cursor:pointer!important;  
-}
-
 #myBtn {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
