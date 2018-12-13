@@ -17,6 +17,7 @@
     			<h3 class="card-title">KOKS</h3>
   			</div>
   			<div class="card-body">
+				<p class="card-text ml-1"><strong>Address:</strong> Oyggjarvegur 45, 100 Tórshavn</p>
 				<p class="card-text ml-1"><strong>Arrival:</strong> 18.30 - 01/12/18</p>
     			<p class="card-text ml-1">Widely regarded as the best restaurant in the Faroe Islands, Michelin star restaurant KOKS offers the complete fine dining experience.</p>
 				<p class="card-text ml-1">
