@@ -19,127 +19,38 @@
   } );
  
 
-// Hotel datepicker
-// Start date
-$(function() {
-	$('#hStartDate').datepicker({
-		onSelect: function(dateText) {
-			$('#hStartDateVal').datepicker("setDate", $(this).datepicker("getDate"));
-		}
-	});
-});
+  $( function() {
+    $( "#datepicker1" ).datepicker();
+  } );
 
-		$(function() {
-			$('#hStartDateVal').datepicker({
-				dateFormat: "yy-mm-dd"
-			});
-		});
-// End date
-$(function() {
-	$('#hEndDate').datepicker({
-		onSelect: function(dateText) {
-			$('#hEndDateVal').datepicker("setDate", $(this).datepicker("getDate"));
-		}
-	});
-});
+  $( function() {
+    $( "#datepicker2" ).datepicker();
+  } );
 
-		$(function() {
-			$('#hEndDateVal').datepicker({
-				dateFormat: "yy-mm-dd"
-			});
-		});
+  $( function() {
+    $( "#datepicker3" ).datepicker();
+  } );
+ 
+  $( function() {
+    $( "#datepicker4" ).datepicker();
+  } );
 
-// Car datepicker
-// Start date
-$(function() {
-	$('#cStartDate').datepicker({
-		onSelect: function(dateText) {
-			$('#cStartDateVal').datepicker("setDate", $(this).datepicker("getDate"));
-		}
-	});
-});
+  $( function() {
+    $( "#datepicker5" ).datepicker();
+  } );
 
-		$(function() {
-			$('#cStartDateVal').datepicker({
-				dateFormat: "yy-mm-dd"
-			});
-		});
-// End date
-$(function() {
-	$('#cEndDate').datepicker({
-		onSelect: function(dateText) {
-			$('#cEndDateVal').datepicker("setDate", $(this).datepicker("getDate"));
-		}
-	});
-});
+  $( function() {
+    $( "#datepicker6" ).datepicker();
+  } );
 
-		$(function() {
-			$('#cEndDateVal').datepicker({
-				dateFormat: "yy-mm-dd"
-			});
-		});
+  $( function() {
+    $( "#datepicker7" ).datepicker();
+  } );
 
-// Experience datepicker
-//Start date
-$(function() {
-	$('#eStartDate').datepicker({
-		onSelect: function(dateText) {
-			$('#eStartDateVal').datepicker("setDate", $(this).datepicker("getDate"));
-		}
-	});
-});
+  $( function() {
+    $( "#datepicker8" ).datepicker();
+  } );
 
-		$(function() {
-			$('#eStartDateVal').datepicker({
-				dateFormat: "yy-mm-dd"
-			});
-		});
-
-// Transport date picker
-//Start date
-$(function() {
-	$('#tStartDate').datepicker({
-		onSelect: function(dateText) {
-			$('#tStartDateVal').datepicker("setDate", $(this).datepicker("getDate"));
-		}
-	});
-});
-
-		$(function() {
-			$('#tStartDateVal').datepicker({
-				dateFormat: "yy-mm-dd"
-			});
-		});
-// End date
-$(function() {
-	$('#tEndDate').datepicker({
-		onSelect: function(dateText) {
-			$('#tEndDateVal').datepicker("setDate", $(this).datepicker("getDate"));
-		}
-	});
-});
-
-		$(function() {
-			$('#tEndDateVal').datepicker({
-				dateFormat: "yy-mm-dd"
-			});
-		});
-
-// Dining date picker
-//Start date
-$(function() {
-	$('#dStartDate').datepicker({
-		onSelect: function(dateText) {
-			$('#dStartDateVal').datepicker("setDate", $(this).datepicker("getDate"));
-		}
-	});
-});
-
-		$(function() {
-			$('#dStartDateVal').datepicker({
-				dateFormat: "yy-mm-dd"
-			});
-		});
 
 
 // When the user scrolls down 20px from the top of the document, show the button
@@ -167,3 +78,13 @@ var myImg = document.getElementById("imgcar");
        i++;
        myImg.style.transform = "scale(1."+ i +")";
     }
+
+ymaps.ready(init);
+			var myMap;
+
+			function init(){     
+				myMap = new ymaps.Map("kort", {
+					center: [62.01, -6.78],
+					zoom: 8
+				});
+			};
