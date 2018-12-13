@@ -38,6 +38,7 @@ CREATE TABLE IF NOT EXISTS `maketravel`.`cinfo` (
   `brand` VARCHAR(20) NULL DEFAULT NULL,
   `cname` VARCHAR(20) NULL DEFAULT NULL,
   `category` VARCHAR(1) NULL DEFAULT NULL,
+  `description` VARCHAR(850),
   PRIMARY KEY (`cid`))
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8;
@@ -188,6 +189,10 @@ CREATE TABLE IF NOT EXISTS `maketravel`.`hinfo` (
   `street` VARCHAR(20) NULL DEFAULT NULL,
   `zipcode` VARCHAR(20) NULL DEFAULT NULL,
   `city` VARCHAR(20) NULL DEFAULT NULL,
+  `description` VARCHAR(850) NULL DEFAULT NULL,
+  `checkin` VARCHAR(20) NULL DEFAULT NULL,
+  `checkout` VARCHAR(20) NULL DEFAULT NULL,
+  `link` VARCHAR(20) NULL DEFAULT NULL,
   PRIMARY KEY (`hid`))
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8;
@@ -263,9 +268,21 @@ SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 
 -- Hotels  
-  INSERT INTO hinfo (hid, place, street, zipcode, city) VALUES ("1", "Hotel Føroyar", "Oyggjarvegur 45", "FO-100", "Tórshavn");
-  INSERT INTO hinfo (hid, place, street, zipcode, city) VALUES ("2", "Hotel Tórshavn", "Tórsgøta 2", "FO-100", "Tórshavn");
-  INSERT INTO hinfo (hid, place, street, zipcode, city) VALUES ("3", "Hotel Vágar", "Djúpheiðar 2", "FO-380", "Sørvágur");
+  INSERT INTO hinfo (hid, place, street, zipcode, city, description, checkin, checkout, link) VALUES ("1", "Hotel Føroyar", "Oyggjarvegur 45", "FO-100", "Tórshavn", "Hotel Føroyar is the biggest in the Faroe Islands. It has 106 rooms, and all have a great view voer Tórshavn, Nólsoy and the North Atlantic Sea. 98 of the 106 are double standard rooms, 2 are family rooms, 2 are handicap rooms, 2 business rooms and 2 suites. Every room has a bathtub/toilet, telephone, radio, TV, hair dryer, and a minibar. Restaurant, restaurant/bar, conference facilities and internet. Good parking facilities." ,"14:00", "11:00", "hotel-foeroyar");
+  INSERT INTO hinfo (hid, place, street, zipcode, city, description, checkin, checkout, link) VALUES ("2", "Hotel Hafnia", "Áarvegur 4-10", "FO-100", "Tórshavn", "74 rooms, where 45 of them are double rooms, 28 single rooms and 1 suite, every room has bathroom/toilet, telephone, radio, TV, hairdryer and minibar. Restaurant, café, bar, conference facilities, free internet and sauna. The hotel is being renovated in the winter 2014/2015, and should be finished in February 2016. Check-in kl. 14:00, check-out kl. 12:00." ,"14:00", "12:00", "hotel-hafnia");
+  INSERT INTO hinfo (hid, place, street, zipcode, city, description, checkin, checkout, link) VALUES ("3", "Hotel Tórshavn", "Tórsgøta 4", "FO-100", "Tórshavn", "The hotel is centrally located with a view over the marina. The hotel has 43 rooms, where as 24 are double rooms, 14 single rooms, 2 family rooms, 2 business rooms and one suite. Every room has toilet/bath, telephone and TV. Bar, brasserie, conference facilities and internet." ,"14:00", "11:00" , "hotel-tórshavn");
+  INSERT INTO hinfo (hid, place, street, zipcode, city, description, checkin, checkout, link) VALUES ("4", "Hotel Streym", "Yviri við Strond 19", "FO-100", "Tórshavn", "Modern and budget hotel, centrally placed in Tórshavn and with a view over Nólsoy. The hotel has 26 rooms, where 20 are double rooms and 6 are single rooms. Every room has bathroom/toilet, telephone and TV. Breakfast restaurant and free internet. Reception is open between kl. 07:00 and 22:00." ,"13:00", "11:00", "hotel-streym");
+  INSERT INTO hinfo (hid, place, street, zipcode, city, description, checkin, checkout, link) VALUES ("5", "Hotel Vágar", "Djúpheiðar 2", "FO-380", "Sørvágur", "You will find this tourist- and business hotel only a few minutes away from the airport.The hotel has 24 rooms, and in which 22 are double rooms and 2 are family room. All rooms have bathroom/toilet, telephone, radio, TV and hairdryer. Restaurant, conference facilities and internet." ,"14:00", "10:00", "hotel-vágar");
+  INSERT INTO hinfo (hid, place, street, zipcode, city, description, checkin, checkout, link) VALUES ("6", "Hotel Runavík", "Heiðavegur 6", "FO-620", "Runavík", "This hotel has a very central location on the Faroe Islands, as it is as geographically in the middle as it can be. The hotel has 19 rooms, where 12 are doubleroom, 6 are singlerooms and1 suite. All have bath/toilet and TV. Restaurant, conference facilities and internet. Please note that this hotel does not serve alcohol." ,"14:00", "11:00", "hotel-runavík");
+  INSERT INTO hinfo (hid, place, street, zipcode, city, description, checkin, checkout, link) VALUES ("7", "Hotel Klaksvík", "Víkavegur 38", "FO-700", "Klaksvík", "The hotel is located on the sunny side and has a great view of the fishing town Klaksvík. The hotel has 28 double/singlerooms, and come in different sizes. All have bath/toilet and TV. Restaurant, conference facilities and free internet. Please note this hotel does not serve alcohol." ,"14:00", "12:00", "hotel-klaksvík");
+  INSERT INTO hinfo (hid, place, street, zipcode, city, description, checkin, checkout, link) VALUES ("8", "Hotel Tvøroyri", "Miðbrekka 5", "FO-800", "Tvøroyri", "The hotel is located centrally in Tvøroyri. It has 14 rooms, and 6 of these are doublerooms with own bath/toilet. The rest are without. All rooms have TV and radio. Restaurant, bar and free internet." ,"14:00", "11:00", "hotel-tvoeroyri");
+  INSERT INTO hinfo (hid, place, street, zipcode, city, description, checkin, checkout, link) VALUES ("9", "Hotel Bakkin", "Vágsvegur 69", "FO-900", "Vágur", "The hotel is located centrally in Vágur. It has 10 rooms, where 2 are double and 2 are single with own bath/toilet, and the other 3 double and 3 single are without. Restaurant, bar and free internet." ,"14:00", "11:00", "hotel-bakkin");
+  INSERT INTO hinfo (hid, place, street, zipcode, city, description, checkin, checkout, link) VALUES ("10", "Guesthouse Gjáargarður", "Dalavegur 20", "FO-478", "Gjógv", "Unique and lovely location in the scenic village of Gjógv. 25 rooms, with 21 double rooms and 4 handicap rooms. All rooms have bathroom/toilet and TV. The building has several floors, but this is no obstacle for wheelchair users. All floors have entrance from the outside, and every doorstep allow full freedom of movement for wheelchairs throughout the house. Restaurant, conference facilities and free internet. Reception is open between 07:00 and 22:00" ,"13:00", "11:00", "gjáargarður");
+  INSERT INTO hinfo (hid, place, street, zipcode, city, description, checkin, checkout, link) VALUES ("11", "Guesthouse Hugo", "Bakkavegur 2", "FO-380", "Sørvágur", "Unique location, right by the sea, and with a grea view over the mountains and sea. Only 4 rooms, with 2 double rooms and 2 single rooms. Shared bath/toilet. Hugo's Guesthouse is ideal if you are planning to visit the birds paradise Mykines, as it is only a few minutes from the harbor. The rooms are on the first floor, above the cozy, retro café Fjørðoy. Café and free internet" ,"14:00", "12:00", "guesthouse-hugo");
+  INSERT INTO hinfo (hid, place, street, zipcode, city, description, checkin, checkout, link) VALUES ("12", "Hotel Skálavík", "Eiler Jacobsens gøta 1", "FO-220", "Skálavík", "Sandoy is definitely worth a visit - you'll find the traditional Faroe Islands here, so why not stay a night or two at this lovely house in Skálavík. The house has 6 double rooms, and 19 family rooms (dbl. bed and bunk beds). All rooms have private bath/toilet, radio and free internet." ,"14:00", "10:00", "hotel-skálavík");
+  INSERT INTO hinfo (hid, place, street, zipcode, city, description, checkin, checkout, link) VALUES ("13", "Ró Guesthouse", "í Geilini 9", "FO-380", "Sørvágur", "You will find this guesthouse close to the airport, and with a good over the mountains and the sea. 4 double rooms with shower/toilet, and 1 doubleroom and 2 singleroom without private facilities. All doublerooms have TV and hairdryer. Breakfast is not included in the price." ,"14:00", "10:00", "ró-guesthouse");
+  -- INSERT INTO hinfo (hid, place, street, zipcode, city) VALUES ("2", "Hotel Tórshavn", "Tórsgøta 2", "FO-100", "Tórshavn");
+  -- INSERT INTO hinfo (hid, place, street, zipcode, city) VALUES ("3", "Hotel Vágar", "Djúpheiðar 2", "FO-380", "Sørvágur");
   
   -- Cars
   INSERT INTO cinfo (cid, brand, cname, category) VALUES ("1", "Citroen", "C1", "A");
@@ -290,13 +307,15 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
   INSERT INTO dinfo (did, place, street, zipcode, city) VALUES ("3", "Restaurant 3", "Oyggjarvegur 45", "FO-100", "Tórshavn");
   INSERT INTO dinfo (did, place, street, zipcode, city) VALUES ("4", "Restaurant 4", "Oyggjarvegur 45", "FO-100", "Tórshavn");
   
-  -- INSERT INTO customers (firstname, lastname, cid) VALUES ("Magnus", "Andreassen", "1234");
-  -- INSERT INTO hotel (sdate, edate) VALUES ("2018-12-15", "2018-12-20");
-  -- SELECT * FROM hinfo;
-  -- SELECT * FROM cinfo;
-  -- SELECT * FROM tinfo;
   
-  SELECT fto, ffrom, customers.cid, customers.firstname, customers.lastname FROM customers, flight WHERE customers_cid=customers.cid;
+ -- SELECT * FROM hinfo;
+ -- SELECT * FROM cinfo;
+ -- SELECT * FROM tinfo;
+ -- SELECT * FROM einfo;
+ -- SELECT * FROM dinfo;
+  
+  -- SELECT fto, ffrom, customers.cid, customers.firstname, customers.lastname FROM customers, flight WHERE customers_cid=customers.cid;
+  SELECT sdate, edate, customers.cid, hinfo.place, hinfo.street, hinfo.zipcode, hinfo.city, hinfo.description, hinfo.checkin, hinfo.checkout, hinfo.link FROM customers, hotel, hinfo WHERE customers_cid=customers.cid AND hotel_id=hinfo.hid;
   
   SELECT * FROM customers;
   SELECT * FROM flight;
