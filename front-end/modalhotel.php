@@ -11,17 +11,26 @@
       </div>
 	  <div class="modal-body">
       	<div class="card text-center">
-			<img class="card-img-top img-fluid rounded-0" id="hotel" src="img/hotelfo.PNG" alt="Card image cap">
+			<img class="card-img-top img-fluid rounded-0" id="hotel" src="content/hotels/foroyar_sm.png" alt="Card image cap">
   			<div class="card-header bg-dark text-white">
-    			<h3 class="card-title">Hotel Føroyar</h3>
+    			<h3 class="card-title">Hotel Føroyar ****</h3>
   			</div>
   			<div class="card-body">
-    			<p class="card-text ml-1">Adresse skal her</p>
-				<p class="card-text ml-1">Anden info skal her</p>
-				<a href="#"><p class="card-text ml-1">Læs mere om hotellet her LINK</p></a>
-				<p class="card-text ml-1 mt-3"><strong>Reservation number:</strong> 3213543543 </p>
-				<p class="card-text ml-1"><strong>Check in:</strong> 01/12/18</p>
-				<p class="card-text ml-1"><strong>Check out:</strong> 05/12/18</p>
+    			<p class="card-text ml-1"><strong>Address:</strong> Oyggjarvegur 45, 100 Tórshavn</p>
+				<p class="card-text ml-1"><strong>Reservation number:</strong> 3213543543 </p>
+				<p class="card-text ml-1"><strong>Check in date:</strong> 01/12/18 &nbsp;<strong>Check out date:</strong> 05/12/18</p>
+				<p class="card-text ml-1">Hotel Føroyar is the biggest in the Faroe Islands. It has 106 rooms, and all have a great view voer Tórshavn, N+olsoy and the North Atlantic Sea.</p>
+				<p class="card-text ml-1">98 of the 106 are double standard rooms, 2 are family rooms, 2 are
+				handicap rooms, 2 business rooms and 2 suites. Every room has a
+				bathtub/toilet, telephone, radio, TV, hair dryer, and a minibar.<br><br>
+
+				Restaurant, restaurant/bar, conference facilities and internet. Good parking facilities.<br><br>
+
+				<strong>Check-in:</strong> kl. 14:00 &nbsp;<strong>Check-out:</strong> kl. 11:00<br><br>
+				
+				Read more about the hotel <a href="https://www.make.fo/en/where-to-stay/hotels/hotel-foeroyar/">HERE!</a>
+				</p>
+				
       			<a href="#" class="btn btn-success btn-sm ml-1 mb-3 rounded-0">See Voucher</a>
   			</div>
   			<div class="card-footer text-muted bg-light rounded-0 text-center">
@@ -32,7 +41,7 @@
       
 	  <div class="modal-body">
       	<div class="card text-center">
-			<img class="card-img-top img-fluid rounded-0" id="car" src="img/hotelfo.PNG" alt="Card image cap">
+			<img class="card-img-top img-fluid rounded-0" id="car" src="content/hotels/vagar_sm.png" alt="Card image cap">
   			<div class="card-header bg-dark text-white">
     			<h3 class="card-title">Need a hotel room?</h3>
   			</div>

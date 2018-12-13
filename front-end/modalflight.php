@@ -11,16 +11,15 @@
       </div>
       <div class="modal-body">
       	<div class="card text-center">
-			<img class="card-img-top img-fluid rounded-0" id="flight" src="img/flight.PNG" alt="Card image cap">
+			<img class="card-img-top img-fluid rounded-0" id="flight" src="content/flight/atlanticairways.png" alt="Card image cap">
   			<div class="card-header bg-dark text-white">
     			<h3 class="card-title">Your booking</h3>
   			</div>
   			<div class="card-body">
-    			<p class="card-text ml-1"><strong>Reservation number:</strong> 3213543543 </p>
-				<p class="card-text ml-1"><strong>Flight number:</strong> RC 456 </p>
+    			<p class="card-text ml-1"><strong>Name</strong> John Doe </p>
+				<p class="card-text ml-1"><strong>Flight number Departure:</strong> RC 456 &nbsp;<strong>Flight number Return:</strong> RC 453</p>
 				<p class="card-text ml-1"><strong>From:</strong> Copenhagen  <strong>To:</strong> Faroe Islands</p>
-				<p class="card-text ml-1"><strong>Departure:</strong> 11.30 01/12/18</p>
-				<p class="card-text ml-1"><strong>Arrival:</strong> 12.30 01/12/18</p>
+				<p class="card-text ml-1"><strong>Departure:</strong> 11.30 - 01/12/18 &nbsp;<strong>Arrival:</strong> 12.30 - 01/12/18</p>
       			<a href="#" class="btn btn-success btn-sm ml-1 mb-3 rounded-0">See Tickets</a>
   			</div>
   			<div class="card-footer text-muted bg-light rounded-0 text-center">

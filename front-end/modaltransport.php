@@ -12,18 +12,15 @@
 	  
 	  <div class="modal-body">
       	<div class="card text-center">
-			<img class="card-img-top img-fluid rounded-0" id="car" src="img/car.PNG" alt="Card image cap">
+			<img class="card-img-top img-fluid rounded-0" id="car" src="content/transport/boat.png" alt="Card image cap">
   			<div class="card-header bg-dark text-white">
     			<h3 class="card-title">Mykines boat</h3>
   			</div>
-  			<div class="card-body">
-    			<p class="card-text ml-1">info skal her fx. tur med båd</p>
-					<p class="card-text ml-1">Pris inkl.: blabla</p>
-					<a href="#"><p class="card-text ml-1">Læs mere om transporten her LINK</p></a>
-					<p class="card-text ml-1 mt-3"><strong>Reservation number:</strong> 3213543543 </p>
-					<p class="card-text ml-1"><strong>Departure:</strong> 09.30 03/12/18</p>
-					<p class="card-text ml-1"><strong>Arrival:</strong> 14.30 03/12/18</p>
-      				<a href="#" class="btn btn-success btn-sm ml-1 mb-3 rounded-0">See Voucher</a>
+			<div class="card-body">
+				<p class="card-text ml-1 mt-4"><strong>Reservation number:</strong> 3213543543 </p>
+				<p class="card-text ml-1"><strong>Departure:</strong> 12.30 - 01/12/18 &nbsp;<strong>Return:</strong> 12.30 - 05/12/18</p>
+				<p class="card-text ml-1"><strong>Tourist information: </strong> &nbsp;Please call +298 343030 for traffic information.</p>
+				<a href="#" class="btn btn-success btn-sm ml-1 mb-3 rounded-0">See Voucher</a>
   			</div>
   			<div class="card-footer text-muted bg-light text-center">
     			<p>Last updated: insert date</p>
@@ -33,18 +30,14 @@
 		
 	  <div class="modal-body">
       	<div class="card text-center">
-			<img class="card-img-top img-fluid rounded-0" id="car" src="img/car.PNG" alt="Card image cap">
+			<img class="card-img-top img-fluid rounded-0" id="car" src="content/transport/helicopter_sm.png" alt="Card image cap">
   			<div class="card-header bg-dark text-white">
     			<h3 class="card-title">Helicopter Dímun</h3>
   			</div>
   			<div class="card-body">
-    			<p class="card-text ml-1">info skal her fx. tur med båd</p>
-				<p class="card-text ml-1">Pris inkl.: blabla</p>
-				<a href="#"><p class="card-text ml-1">Læs mere om transporten her LINK</p></a>
-				<p class="card-text ml-1 mt-3"><strong>Reservation number:</strong> 3213543543 </p>
-				<p class="card-text ml-1"><strong>Departure:</strong> 09.30 03/12/18</p>
-				<p class="card-text ml-1"><strong>Arrival:</strong> 14.30 03/12/18</p>
-      			<a href="#" class="btn btn-success btn-sm ml-1 mb-3 rounded-0">See Voucher</a>
+				<p class="card-text ml-1 mt-4"><strong>Reservation number:</strong> 3213543543 </p>
+				<p class="card-text ml-1"><strong>Departure:</strong> 12.30 - 01/12/18 &nbsp;<strong>Return:</strong> 12.30 - 05/12/18</p>
+				<a href="#" class="btn btn-success btn-sm ml-1 mb-3 rounded-0">See Voucher</a>
   			</div>
   			<div class="card-footer text-muted bg-light text-center">
     			<p>Last updated: insert date</p>

@@ -11,18 +11,28 @@
       </div>
 	  <div class="modal-body">
       	<div class="card text-center">
-			<img class="card-img-top img-fluid rounded-0" id="car" src="img/car.PNG" alt="Card image cap">
+			<img class="card-img-top img-fluid rounded-0" id="car" src="content/cars/c3_sm.png" alt="Card image cap">
   			<div class="card-header bg-dark text-white">
-    			<h3 class="card-title">Car make and model</h3>
+    			<h3 class="card-title">Citroen C3 or similar</h3>
   			</div>
   			<div class="card-body">
-    			<p class="card-text ml-1">Bil info skal her</p>
-				<p class="card-text ml-1">Pris inkl.: blabla</p>
-				<a href="#"><p class="card-text ml-1">Læs mere om bilen her LINK</p></a>
-				<p class="card-text ml-1 mt-3"><strong>Reservation number:</strong> 3213543543 </p>
-				<p class="card-text ml-1"><strong>Pick up:</strong> 12.30 01/12/18</p>
-				<p class="card-text ml-1"><strong>Drop off:</strong> 12.30 05/12/18</p>
-      			<a href="#" class="btn btn-success btn-sm ml-1 mb-3 rounded-0">See Voucher</a>
+				<p class="card-text ml-1 mt-4"><strong>Reservation number:</strong> 3213543543 </p>
+				<p class="card-text ml-1"><strong>Pick up:</strong> 12.30 - 01/12/18 &nbsp;<strong>Drop off:</strong> 12.30 - 05/12/18</p>
+    			<p class="card-text ml-1">4-5 passengers, trunk 300/922 l, manual gear, airbags, abs and 5 doors</p>
+				<p class="card-text ml-1"><strong>Price includes:</strong> &nbsp;Free kilometer, hull and personal insurance, 25% VAT<br></p>
+				<p class="card-text ml-1"><strong>The following can be bought for an additional fee:</strong><br>
+				Extra driver - DKK 150,-<br>
+				GPS - DKK 100,- per day<br>
+				WiFi - DKK 69,- per day<br>
+				Children seat - DKK 100,- per day<br>
+				Booster - DKK 50,- per day<br>
+				Tunnel - DKK 100,-<br>
+				Fuel - DKK 20,- per liter<br><br>
+
+				Deductible DKK 5.000,- per damage - which can be reduced to DKK 500,-, by signing an insurance (SCDW) at DKK 100,- per day.<br><br>
+
+				Read Make Car Rental's "Terms and Conditions" <a href="#">HERE!</a>	</p>
+				<a href="#" class="btn btn-success btn-sm ml-1 mb-3 rounded-0">See Voucher</a>
   			</div>
   			<div class="card-footer text-muted bg-light text-center">
     			<p>Last updated: insert date</p>
