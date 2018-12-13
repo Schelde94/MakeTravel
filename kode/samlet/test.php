@@ -1,12 +1,5 @@
 <!doctype html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>Untitled Document</title>
-	</head>
 
-	<body>
-		
 		<?php
 		
 		$firstName = filter_input(INPUT_POST, 'firstname') or die('Missing or illigal fn parameter');
@@ -43,9 +36,9 @@
 		$stmt->execute();
 		
 		// Flyinfo
-		$sql = 'INSERT INTO flight (fto, ffrom) VALUES (?, ?);';
+		$sql = 'INSERT INTO flight (fto, ffrom, customers_cid) VALUES (?, ?, ?);';
 		$stmt = $link->prepare($sql);
-		$stmt->bind_param('ss', $flightTo, $flightFrom);
+		$stmt->bind_param('ssi', $flightTo, $flightFrom, $kundeNummer);
 		$stmt->execute();
 		//Fly upload
 		if(isset($_FILES['fupload'])):
@@ -57,9 +50,9 @@
 		
 		// Hotel booking
 		if(isset($hId)){
-			$sql = 'INSERT INTO hotel (sdate, edate, hotel_id) VALUES (?, ?, ?);';
+			$sql = 'INSERT INTO hotel (sdate, edate, hotel_id, customers_cid) VALUES (?, ?, ?, ?);';
 			$stmt = $link->prepare($sql);
-			$stmt->bind_param('ssi', $hStart, $hEnd, $hId);
+			$stmt->bind_param('ssii', $hStart, $hEnd, $hId, $kundeNummer);
 			$stmt->execute();
 			//Hotel upload
 			if(isset($_FILES['hupload'])):
@@ -72,9 +65,9 @@
 		
 		// Car booking
 		if(isset($cId)){
-			$sql = 'INSERT INTO cars (sdate, edate, car_id) VALUES (?, ?, ?);';
+			$sql = 'INSERT INTO cars (sdate, edate, car_id, customers_cid) VALUES (?, ?, ?, ?);';
 			$stmt = $link->prepare($sql);
-			$stmt->bind_param('ssi', $cStart, $cEnd, $cId);
+			$stmt->bind_param('ssii', $cStart, $cEnd, $cId, $kundeNummer);
 			$stmt->execute();
 			// Car voucher upload
 			if(isset($_FILES['cupload'])):
@@ -86,9 +79,9 @@
 		
 		// Experiences
 		if(isset($eId)){
-			$sql = 'INSERT INTO exp (sdate, exp_id) VALUES (?, ?);';
+			$sql = 'INSERT INTO exp (sdate, exp_id, customers_cid) VALUES (?, ?, ?);';
 			$stmt = $link->prepare($sql);
-			$stmt->bind_param('si', $eStart, $eId);
+			$stmt->bind_param('sii', $eStart, $eId, $kundeNummer);
 			$stmt->execute();
 			// Car voucher upload
 			if(isset($_FILES['eupload'])):
@@ -100,9 +93,9 @@
 		
 		// Transport
 		if(isset($tId)){
-			$sql = $sql = 'INSERT INTO trans (sdate, edate, trans_id) VALUES (?, ?, ?);';
+			$sql = $sql = 'INSERT INTO trans (sdate, edate, trans_id, customers_cid) VALUES (?, ?, ?, ?);';
 			$stmt = $link->prepare($sql);
-			$stmt->bind_param('ssi', $tStart, $tEnd, $tId);
+			$stmt->bind_param('ssii', $tStart, $tEnd, $tId, $kundeNummer);
 			$stmt->execute();
 			// Transport voucher upload
 			if(isset($_FILES['tupload'])):
@@ -114,9 +107,9 @@
 		
 		// Dining
 		if(isset($eId)){
-			$sql = 'INSERT INTO dining (sdate, dining_id) VALUES (?, ?);';
+			$sql = 'INSERT INTO dining (sdate, dining_id, customers_cid) VALUES (?, ?, ?);';
 			$stmt = $link->prepare($sql);
-			$stmt->bind_param('si', $eStart, $eId);
+			$stmt->bind_param('sii', $eStart, $eId, $kundeNummer);
 			$stmt->execute();
 			// Car voucher upload
 			if(isset($_FILES['dupload'])):
@@ -127,7 +120,6 @@
 		}
 		
 		
-		
+		echo header("location: admin.php");
 		?>
-	</body>
-</html>
+	

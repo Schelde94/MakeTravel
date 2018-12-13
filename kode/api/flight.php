@@ -17,7 +17,7 @@
 		
 			$flynummer = filter_input(INPUT_GET, 'flynummer');
 			
-			$url = 'http://aviation-edge.com/v2/public/timetable?key=08c9bc-2af11e&iataCode=FAE&type=arrival';
+			$url = 'http://aviation-edge.com/v2/public/timetable?key=9c035e-3feed4&iataCode=FAE&type=arrival';
 
 			$data = file_get_contents($url);
 
