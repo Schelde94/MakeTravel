@@ -28,11 +28,11 @@
 				<!-- Kundeoplysninger -->
 				<h3>Kunde</h3>
   				<div class="col-auto rounded-0">
-    				<label for="exampleInputEmail1">Fornavn</label>
+    				<label for="fornavn">Fornavn</label>
     				<input type="text" class="form-control mb-4 rounded-0" name="firstname" id="fornavn" aria-describedby="emailHelp" placeholder="Skriv fornavn her">
-					<label for="exampleInputEmail1">Efternavn</label>
+					<label for="efternavn">Efternavn</label>
     				<input type="text" class="form-control mb-4 rounded-0" name="lastname" id="efternavn" aria-describedby="emailHelp" placeholder="Skriv efternavn her">
-					<label for="exampleInputEmail1">Kunde nr.</label>
+					<label for="kundenummer">Kunde nr.</label>
     				<input type="number" class="form-control mb-5 rounded-0" name="cid" id="kundenummer" aria-describedby="emailHelp" placeholder="Skriv kundernummer her">
   				</div>
 				
@@ -61,7 +61,7 @@
 					</div>
 					<!-- Hotel selector -->
 					<div class="row mb-5">
-						<label for="exampleInputEmail1">Hotel</label>
+						<label for="inlineFormCustomSelect4">Hotel</label>
     					<select class="custom-select mr-sm-2 mb-3 rounded-0" name="hotelid" id="inlineFormCustomSelect4">
 							<option selected>Vælg hotel</option>
 							<?php
@@ -94,6 +94,7 @@
 						<label class="mr-3" for="exampleInputEmail1">Pick up</label>
 						<div class="mr-5 rounded-0" id="cStartDate"></div>
 						<input type="hidden" name="cStartDateVal" id="cStartDateVal" value="<?=date("Y-m-d")?>">
+						
 						<label class="mr-3" for="exampleInputEmail1">Drop off</label>
 						<div class="mr-5 rounded-0" id="cEndDate"></div>
 						<input type="hidden" name="cEndDateVal" id="cEndDateVal" value="<?=date("Y-m-d")?>">
@@ -168,6 +169,7 @@
 						<label class="mr-3" for="exampleInputEmail1">Departure</label>
 						<div class="mr-5 rounded-0" id="tStartDate"></div>
 						<input type="hidden" name="tStartDateVal" id="tStartDateVal" value="<?=date("Y-m-d")?>">
+						
 						<label class="mr-3" for="exampleInputEmail1">Return</label>
 						<div class="mr-5 rounded-0" id="tEndDate"></div>
 						<input type="hidden" name="tEndDateVal" id="tEndDateVal" value="<?=date("Y-m-d")?>">

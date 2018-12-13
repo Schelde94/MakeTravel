@@ -1,5 +1,3 @@
-<!doctype html>
-
 		<?php
 		
 		$firstName = filter_input(INPUT_POST, 'firstname') or die('Missing or illigal fn parameter');
