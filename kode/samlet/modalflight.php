@@ -2,13 +2,13 @@
 
 <?php
 
-$kundenummer = $_POST['kundenummer'];
+$kundenummer = filter_input(INPUT_POST, 'kundenummer');
 
 
 
 ?>
 
-<!-- modal flight -->		
+<!-- modal flight -->
 <div class="modal fade bd-example-modal-lg fly" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
     <div class="modal-content">
@@ -31,13 +31,13 @@ $kundenummer = $_POST['kundenummer'];
 				$stmt = $link->prepare($sql);
 				$stmt->execute();
 				$stmt->bind_result($fto, $ffrom, $cid, $cfnam, $clnam);
-				while($stmt->fetch()){				
-				
+				while($stmt->fetch()){
+
 				if($kundenummer==$cid){?>
-				
+
 				<p class="card-text ml-1"><strong><?=$cfnam. ' ' .$clnam?></strong></p>
-				<p class="card-text ml-1"><strong>Arrival:</strong></p>	
-				<?php 
+				<p class="card-text ml-1"><strong>Arrival:</strong></p>
+				<?php
 				// Arrival
 				//$aurl = 'http://aviation-edge.com/v2/public/timetable?key=9c035e-3feed4&iataCode=FAE&type=arrival';
 				$adata = file_get_contents($aurl);
@@ -56,10 +56,10 @@ $kundenummer = $_POST['kundenummer'];
 					}
 
 				};
-									   
+
 				?>
-				<p class="card-text ml-1"><strong>Departure:</strong></p>	
-				<?php 
+				<p class="card-text ml-1"><strong>Departure:</strong></p>
+				<?php
 				// Departure
 				//$durl = 'http://aviation-edge.com/v2/public/timetable?key=9c035e-3feed4&iataCode=FAE&type=departure';
 				$ddata = file_get_contents($durl);
@@ -78,12 +78,12 @@ $kundenummer = $_POST['kundenummer'];
 					}
 
 				};
-									   
+
 				?>
-				
-					
-	
-					
+
+
+
+
       			<a href="uploads/flights/<?='ft' . $kundenummer . '.pdf' ?>" target="_blank" class="btn btn-success btn-sm ml-1 mb-3 rounded-0">See Tickets</a>
   			</div>
 			<?php } ?>
@@ -92,9 +92,9 @@ $kundenummer = $_POST['kundenummer'];
     			<p>Last updated: insert date</p>
   			</div>
 		</div>
-		  
-		  
-		  
+
+
+
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary rounded-0" data-dismiss="modal">Close</button>

@@ -278,7 +278,7 @@ SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 
--- Hotels  
+-- Hotels
   INSERT INTO hinfo (hid, place, street, zipcode, city, description, checkin, checkout, link) VALUES ("1", "Hotel Føroyar", "Oyggjarvegur 45", "FO-100", "Tórshavn", "Hotel Føroyar is the biggest in the Faroe Islands. It has 106 rooms, and all have a great view voer Tórshavn, Nólsoy and the North Atlantic Sea. 98 of the 106 are double standard rooms, 2 are family rooms, 2 are handicap rooms, 2 business rooms and 2 suites. Every room has a bathtub/toilet, telephone, radio, TV, hair dryer, and a minibar. Restaurant, restaurant/bar, conference facilities and internet. Good parking facilities." ,"14:00", "11:00", "hotel-foeroyar");
   INSERT INTO hinfo (hid, place, street, zipcode, city, description, checkin, checkout, link) VALUES ("2", "Hotel Hafnia", "Áarvegur 4-10", "FO-100", "Tórshavn", "74 rooms, where 45 of them are double rooms, 28 single rooms and 1 suite, every room has bathroom/toilet, telephone, radio, TV, hairdryer and minibar. Restaurant, café, bar, conference facilities, free internet and sauna. The hotel is being renovated in the winter 2014/2015, and should be finished in February 2016. Check-in kl. 14:00, check-out kl. 12:00." ,"14:00", "12:00", "hotel-hafnia");
   INSERT INTO hinfo (hid, place, street, zipcode, city, description, checkin, checkout, link) VALUES ("3", "Hotel Tórshavn", "Tórsgøta 4", "FO-100", "Tórshavn", "The hotel is centrally located with a view over the marina. The hotel has 43 rooms, where as 24 are double rooms, 14 single rooms, 2 family rooms, 2 business rooms and one suite. Every room has toilet/bath, telephone and TV. Bar, brasserie, conference facilities and internet." ,"14:00", "11:00" , "hotel-tórshavn");
@@ -294,14 +294,14 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
   INSERT INTO hinfo (hid, place, street, zipcode, city, description, checkin, checkout, link) VALUES ("13", "Ró Guesthouse", "í Geilini 9", "FO-380", "Sørvágur", "You will find this guesthouse close to the airport, and with a good over the mountains and the sea. 4 double rooms with shower/toilet, and 1 doubleroom and 2 singleroom without private facilities. All doublerooms have TV and hairdryer. Breakfast is not included in the price." ,"14:00", "10:00", "ró-guesthouse");
   -- INSERT INTO hinfo (hid, place, street, zipcode, city) VALUES ("2", "Hotel Tórshavn", "Tórsgøta 2", "FO-100", "Tórshavn");
   -- INSERT INTO hinfo (hid, place, street, zipcode, city) VALUES ("3", "Hotel Vágar", "Djúpheiðar 2", "FO-380", "Sørvágur");
-  
+
   -- Cars
   INSERT INTO cinfo (cid, brand, cname, category, description) VALUES ("1", "Citroen", "C1", "A", "2-4 passengers, trunk 196/780 l, manual gear, airbags, abs and 5 doors");
   INSERT INTO cinfo (cid, brand, cname, category, description) VALUES ("2", "Opel", "Corsa", "B", "4 passengers, trunk 286 l, manual gear, airbags, abs and 5 doors");
   INSERT INTO cinfo (cid, brand, cname, category, description) VALUES ("3", "Citroen", "C3", "C", "4-5 passengers, trunk 300/922 l, manual gear, airbags, abs and 5 doors");
   INSERT INTO cinfo (cid, brand, cname, category, description) VALUES ("4", "Citroen", "C4", "D", "5 passengers, trunk 408 l, manual gear, airbags, abs og 5 doors");
   INSERT INTO cinfo (cid, brand, cname, category, description) VALUES ("5", "Volvo", "V40", "M", "5 persons, 335/1444 l trunk, manual gear, airbags, ABS and 5 doors");
-  
+
   -- Experiences
   INSERT INTO einfo (eid, ename, shortdesc, longdesc, adultprice, childprice) VALUES ("1", "Visit the island of Vágar", "Vist probably the most beautiful island of the faroese, with multiple stops for amazing pictures.", "We drive from Tórshavn at the old mountain road to Norðadalsskarð, where you will have a nice view over the island of Koltur. Continue through the valley of Kollafjarðadal to Leynar, and through the subsea tunnel, under Vestmannasund to Vágar, and the villages Sandavág, Miðvág and Sørvág. We'll stop at the airport before heading to Bø and Gásadal, from where you will have an incredible view of Tindhólm and Mykines. You will be picked up at your hotel shortly before the tour starts, and returned after it's over. Price includes bus and guide. Pick-up/drop-off: Hotel Føroyar, Hotel Hafnia, Hotel Tórshavn, Hotel Streym and the Bus Terminal - pls. indicate when booking.", "Adult DKK 600,-", "Children (u/12 years) DKK 300,-");
   INSERT INTO einfo (eid, ename, shortdesc, longdesc, adultprice, childprice) VALUES ("2", "Mykines - the bird paradise", "A unique opportunity to visit the bird paradise on the island of Mykines.", "A day trip to the western most island on the Faroe Islands, Mykines - also called the bird paradise. Come within an arm's length of the Puffins, or perhaps the bigger bird the northern gannet, which can only be found on Mykines. You can choose to experience the small island community in the village, or put on your hiking boots and walk out to the islet, a trip which takes 1-2 hours. The tour is guided and lunch on Mykines is included. Price includes bus, boat, lunch and guide. Pick-up/drop-off: Hotel Føroyar, Hotel Hafnia, Hotel Tórshavn, Hotel Streym and the Bus Terminal - pls. indicate when booking.", "Adult DKK 1.495,-", "Children (u/12 years) DKK 750,-");
@@ -309,12 +309,12 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
   INSERT INTO einfo (eid, ename, shortdesc, longdesc, adultprice, childprice) VALUES ("4", "Vestmanna birdcliffs", "See the majestic skyhigh birdcliffs north of Vestmanna.", "Here there will be something for all your senses. The sound birds, the whispers of the sea, the weather-beaten cliffs, and the sky touching the peaks. The boat slips into the caves and you get engulfed in darkness, and then a moment later you're out again. An incredible experience, that you have to try. The trip takes about 2 hours 15 minutes", "Adult DKK 295,-", "Children(u/13 years) DKK 150,-");
   INSERT INTO einfo (eid, ename, shortdesc, longdesc, adultprice, childprice) VALUES ("5", "Cruise on the schooner Norðlýsið", "Enjoy a short cruise two-masted shooner.", "Large gorges, tall freestanding cliffs, caves and bird cliffs, surf and sunshine, shoals of fish and bird life. Klæmingsgjógv, Álvastakkur and Álvagjógv are the names of some of these incredible formations - an abundance of beauty and adventures. Are birdclifs, and perhaps seals and whales, high on your wishlisft of what you want to experience in the Faroe Islands? Then we can offer you this morning cruise! The trip takes 3 hours, and we sail close to the shore and the birdcliffs, where we'll have the opportunity to take pictures of the birds, the cliffs and even in the water. On this trip we will pass the lighthouse, that had utmost important role on the sea, Borðan. The faroese writer, composer and painter William Heinese, called the lighthouse The Lighthouse at the end of the world. The lighthouse was built in 1893 and was, just as the other houses there, cut and built from boulders taken from the local area. The lense is 2.82 meters in diameter, and with a weight of almost 4 tons, is the biggest in Europe, and one of the biggest in the world. Depending on the weather we usually have a short stay in the village of Nólsoy.
 ", "Adult DKK 300,-", "Children (u/12 years) DKK 150,-");
-  
+
   -- Transport
   INSERT INTO tinfo (tid, ttype) VALUES ("1", "Bus");
   INSERT INTO tinfo (tid, ttype) VALUES ("2", "Færge");
   INSERT INTO tinfo (tid, ttype) VALUES ("3", "Helikopter");
-  
+
   -- Dining
   INSERT INTO dinfo (did, place, street, zipcode, city, description) VALUES ("1", "KOKS", "Frammi við Gjónna", "", "Leynavatn", "Widely regarded as the best restaurant in the Faroe Islands, Michelin star restaurant KOKS offers the complete fine dining experience. Focusing on innovative traditional Faroese food, KOKS gives its guests the chance to taste the Faroes and its seasons through local produce. The young avant-gardes at KOKS use Faroese produce, both coarse and fine, ancient and modern, always keeping an eye on sustainability, leaving the hills that bring forth the good fruit to flourish. Rather than chasing the novel for its own sake, every effort is put into exploring the ancient practices – drying, fermenting, salting and smoking. KOKS follows the seasons and what they bring forth, transforming ancient culinary tradition into modern delicacies. Simple and pure, fresh and traditional. Fun fact: In 2015, KOKS won the The Nordic Prize for best restaurant in the Nordic countries and in 2017 was awarded a Michelin star, the first for a Faroese restaurant. It has retained its star for 2018.");
   INSERT INTO dinfo (did, place, street, zipcode, city, description) VALUES ("2", "ÁARSTOVA", "Gongin 1", "FO-100", "Tórshavn", "Áarstova used to be a family home on the outskirts of the Tórshavn. Today, it provides the setting for a cozy wooden restaurant located in the heart of the city – undoubtedly one of the best restaurants in the Faroe Islands. The impeccable service at Áarstova is only matched by the food and wine menu, which includes fabulous Faroese lamb and carefully chosen wine and Scottish ales.");
@@ -322,19 +322,19 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
   INSERT INTO dinfo (did, place, street, zipcode, city, description) VALUES ("4", "RÆST", "Gongin 8", "FO-100", "Tórshavn", "In May 2016, the Faroe Islands saw the opening of what might be the world’s first “fermented” restaurant: Raest, entirely dedicated to traditional Faroese fermented foods. Ræst means fermented in Faroese. Unlike the wet fermenting process for yogurt and pickled herring, the Faroes’ salty, brisk air creates ideal conditions for air-drying meat and fish, a process done in hjallur, food-drying sheds scattered across the islands. The restaurant itself is in Tórshavn, the capital, on the main island of Streymoy, in a creaky 400-year-old house that makes Ingmar Bergman sets look Baroque. The narrow dining room’s floors, walls and ceilings are built of salvaged driftwood. Communal tables seat 27 and are made from the reclaimed Douglas pine of an old schooner’s mast. A Delft stove once fueled by blubber oil sits in the corner. The menu includes cold fermented lamb soup with turnips, fermented cod and fermented lamb intestines, fermented colon on sauerkraut, Rhubarb porridge with cream of burned rosemary, and – for dessert – waffle, jam and milk.
 ");
   INSERT INTO dinfo (did, place, street, zipcode, city, description) VALUES ("5", "BARBARA FISH HOUSE", "Gongin 4-6", "FO-100", "Tórshavn", "Barbara Fish House, located in a cute house cut into the rocks, has a fantastic tasting menu, consisting of locally-caught Faroese seafood such as horse mussels and smoked salmon, fresh scallops and Bouillabaise poured from a teapot. If you want to try Faroese seafood, Barbara is the place to go.");
- 
-  
-  
+
+
+
  -- SELECT * FROM hinfo;
  -- SELECT * FROM cinfo;
  -- SELECT * FROM tinfo;
  -- SELECT * FROM einfo;
  -- SELECT * FROM dinfo;
-  
-  -- SELECT fto, ffrom, customers.cid, customers.firstname, customers.lastname FROM customers, flight WHERE customers_cid=customers.cid;
+
+ -- SELECT fto, ffrom, customers.cid, customers.firstname, customers.lastname FROM customers, flight WHERE customers_cid=customers.cid;
   -- SELECT sdate, edate, customers.cid, hinfo.place, hinfo.street, hinfo.zipcode, hinfo.city, hinfo.description, hinfo.checkin, hinfo.checkout, hinfo.link FROM customers, hotel, hinfo WHERE customers_cid=customers.cid AND hotel_id=hinfo.hid;
- 
-  
+  SELECT sdate, edate, customers.cid, hinfo.hid, hinfo.place, hinfo.street, hinfo.zipcode, hinfo.city, hinfo.checkin, hinfo.checkout, hinfo.description, hinfo.link FROM customers, hotel, hinfo WHERE customers_cid=customers.cid AND hotel_id=hinfo.hid;
+
   SELECT * FROM customers;
   SELECT * FROM flight;
   SELECT * FROM hotel;
