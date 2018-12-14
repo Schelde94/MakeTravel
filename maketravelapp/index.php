@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<title>Make Travel Companion</title>
+<title>Make Travel Admin</title>
 <!-- head -->		
 <?php include 'head.php';?>
 <!-- head END -->
@@ -12,14 +12,9 @@
 	<?php include 'header.php';?>
 	<!-- header END -->
 	
-<<<<<<< HEAD
 	<!-- Main content -->
 	<div class="container mb-5">
 		<form action="home.php" method="post">
-=======
-	<div class="container mb-5 mt-5">
-		<form>
->>>>>>> 9398c8ca31e93cca86ce28247ebbf5b009b13bda
   			<div class="form-group row">
     			<label for="inputEmail3" class="col-sm-2 col-form-label text-white mt-5">Customer number</label>
     			<div class="col-sm-8">
