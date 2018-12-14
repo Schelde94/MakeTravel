@@ -76,9 +76,9 @@ $kundenummer = filter_input(INPUT_POST, 'kundenummer');
 				<p class="card-text ml-1"><strong>Check in date: </strong><?=date("d-m-Y", strtotime($sDate))?> &nbsp;<strong>Check out date: </strong><?=date("d-m-Y", strtotime($eDate))?></p>
 				<p class="card-text ml-1"><?=$description?></p>
 				
-				Read more about the hotel <a class="links" href="https://www.make.fo/en/where-to-stay/hotels/hotel-foeroyar/">HERE!</a><br><br>
+				Read more about the hotel <a class="links" href="https://www.make.fo/en/where-to-stay/hotels/<?=$link?>/" target="_blank">HERE!</a><br><br>
 				
-				<a href="#" class="btn btn-success mb-3 rounded-0 col align-self-center">See Voucher</a>	
+				<a href="uploads/flights/<?='ft' . $kundenummer . '.pdf' ?>" target="_blank" class="btn btn-success mb-3 rounded-0 col align-self-center">See Voucher</a>	
 				</p>
 				
       			
