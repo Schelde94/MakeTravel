@@ -78,7 +78,7 @@ $kundenummer = filter_input(INPUT_POST, 'kundenummer');
 				
 				Read more about the hotel <a class="links" href="https://www.make.fo/en/where-to-stay/hotels/<?=$link?>/" target="_blank">HERE!</a><br><br>
 				
-				<a href="uploads/flights/<?='ft' . $kundenummer . '.pdf' ?>" target="_blank" class="btn btn-success mb-3 rounded-0 col align-self-center">See Voucher</a>	
+				<a href="uploads/hotel/<?='hb' . $kundenummer . '.pdf' ?>" target="_blank" class="btn btn-success mb-3 rounded-0 col align-self-center">See Voucher</a>	
 				</p>
 				
       			
