@@ -2,7 +2,7 @@
 
 <?php
 
-$kundenummer = filter_input(INPUT_POST, 'kundenummer');
+$kundenummer = $_POST['kundenummer'];
 
 
 
