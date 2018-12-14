@@ -1,4 +1,7 @@
 <!doctype html>
+<?php
+$kundenummer = filter_input(INPUT_POST, 'kundenummer');
+?>
 <!-- modal hotel -->		
 <div class="modal fade bd-example-modal-lg transport" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
@@ -9,23 +12,43 @@
           <span aria-hidden="true"><i class="fas fa-times"></i></span>
         </button>
       </div>
-		
+		<?php 
+		require_once('dbcon.php');
+		$sql = 'SELECT sdate, edate, stime, etime, customers.cid, tinfo.tid, tinfo.ttype FROM customers, trans, tinfo WHERE customers_cid=customers.cid AND trans_id=tinfo.tid;';
+		$stmt = $link->prepare($sql);
+		$stmt->execute();
+		$stmt->bind_result($sdate, $edate, $stime, $etime, $cid, $tid, $type);
+		while($stmt->fetch()){
+			
+			if($kundenummer==$cid){
+		?>
 	  <div class="modal-body">
       	<div class="card text-center">
-			<img class="card-img-top img-fluid rounded-0" id="car" src="content/transport/helicopter_sm.png" alt="Card image cap">
+			<img class="card-img-top img-fluid rounded-0" id="car" src="content/transport/<?php
+				switch($tid){
+					case "1":
+						echo "bus.png";
+						break;
+					case "2":
+						echo "boat.png";
+						break;
+					case "3":
+						echo "helicopter_sm.png";
+						break;
+			?>" alt="Card image cap">
   			<div class="card-header bg-dark text-white">
-    			<h3 class="card-title">Helicopter Dímun</h3>
+    			<h3 class="card-title"><?=$type?></h3>
   			</div>
   			<div class="card-body text-left">
-				<p class="card-text ml-1"><strong>Departure:</strong> 12.30 - 01/12/18 &nbsp;<strong>Return:</strong> 12.30 - 05/12/18</p>
-				<a href="#" class="btn btn-success ml-1 mb-3 rounded-0 col align-self-center">See Voucher</a>
+				<p class="card-text ml-1"><strong>Departure: </strong><?=$stime?> - <?=$sdate?> &nbsp;<strong>Return: </strong><?=$etime?> - <?=$edate?></p>
+				<a href="uploads/trans/<?='tra' . $kundenummer . '.pdf' ?>" target="_blank" class="btn btn-success ml-1 mb-3 rounded-0 col align-self-center">See Voucher</a>
   			</div>
   			<div class="card-footer text-muted bg-light text-center">
     			<p>Last updated: insert date</p>
   			</div>
 		</div>
       </div>
-
+		<?php }}?>
 	  <div class="modal-body">
       	<div class="card text-center">
 			<img class="card-img-top img-fluid rounded-0" id="car" src="img/drive.PNG" alt="Card image cap">
