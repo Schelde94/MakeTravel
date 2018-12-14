@@ -94,7 +94,7 @@ CREATE TABLE IF NOT EXISTS `maketravel`.`dinfo` (
   `street` VARCHAR(20) NULL DEFAULT NULL,
   `zipcode` VARCHAR(20) NULL DEFAULT NULL,
   `city` VARCHAR(20) NULL DEFAULT NULL,
-  `description` VARCHAR(850) NULL DEFAULT NULL,
+  `description` VARCHAR(1500) NULL DEFAULT NULL,
   PRIMARY KEY (`did`))
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8;
@@ -316,11 +316,13 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
   INSERT INTO tinfo (tid, ttype) VALUES ("3", "Helikopter");
   
   -- Dining
-  INSERT INTO dinfo (did, place, street, zipcode, city, description) VALUES ("1", "Restaurant 1", "Oyggjarvegur 45", "FO-100", "Tórshavn");
-  INSERT INTO dinfo (did, place, street, zipcode, city, description) VALUES ("2", "Restaurant 2", "Oyggjarvegur 45", "FO-100", "Tórshavn");
-  INSERT INTO dinfo (did, place, street, zipcode, city, description) VALUES ("3", "Restaurant 3", "Oyggjarvegur 45", "FO-100", "Tórshavn");
-  INSERT INTO dinfo (did, place, street, zipcode, city, description) VALUES ("4", "Restaurant 4", "Oyggjarvegur 45", "FO-100", "Tórshavn");
-  INSERT INTO dinfo (did, place, street, zipcode, city, description) VALUES ("4", "Restaurant 4", "Oyggjarvegur 45", "FO-100", "Tórshavn");
+  INSERT INTO dinfo (did, place, street, zipcode, city, description) VALUES ("1", "KOKS", "Frammi við Gjónna", "", "Leynavatn", "Widely regarded as the best restaurant in the Faroe Islands, Michelin star restaurant KOKS offers the complete fine dining experience. Focusing on innovative traditional Faroese food, KOKS gives its guests the chance to taste the Faroes and its seasons through local produce. The young avant-gardes at KOKS use Faroese produce, both coarse and fine, ancient and modern, always keeping an eye on sustainability, leaving the hills that bring forth the good fruit to flourish. Rather than chasing the novel for its own sake, every effort is put into exploring the ancient practices – drying, fermenting, salting and smoking. KOKS follows the seasons and what they bring forth, transforming ancient culinary tradition into modern delicacies. Simple and pure, fresh and traditional. Fun fact: In 2015, KOKS won the The Nordic Prize for best restaurant in the Nordic countries and in 2017 was awarded a Michelin star, the first for a Faroese restaurant. It has retained its star for 2018.");
+  INSERT INTO dinfo (did, place, street, zipcode, city, description) VALUES ("2", "ÁARSTOVA", "Gongin 1", "FO-100", "Tórshavn", "Áarstova used to be a family home on the outskirts of the Tórshavn. Today, it provides the setting for a cozy wooden restaurant located in the heart of the city – undoubtedly one of the best restaurants in the Faroe Islands. The impeccable service at Áarstova is only matched by the food and wine menu, which includes fabulous Faroese lamb and carefully chosen wine and Scottish ales.");
+  INSERT INTO dinfo (did, place, street, zipcode, city, description) VALUES ("3", "KATRINA CHRISTIANSEN", "Bringsnagøta 6", "FO-100", "Tórshavn", "Enjoy a meal at the newly-opened Katrina Christiansen, a Faroese restaurant inspired by the Spanish-tapas style. The old building has served multiple purposes since it was built in the early 1700s. It has functioned as a barber shop and grocery shop, and is also the birthplace and home of the most famous Faroese writers and artists, William Heinesen. The building was renovated in 2016 and emphasis was put on preserving as much of the original building as possible. Har Katrina Christiansen stendur í dag, hevur verið virksemi síðani fyrst í 1700-talinum. Húsini hava havt minst fýra ymisk nøvn: Bartskerstova, Skálahús, hjá Restorff, hjá Heinesen og hjá Katrinu Christiansen. The restaurant can also be used for receptions, meetings and parties.");
+  INSERT INTO dinfo (did, place, street, zipcode, city, description) VALUES ("4", "RÆST", "Gongin 8", "FO-100", "Tórshavn", "In May 2016, the Faroe Islands saw the opening of what might be the world’s first “fermented” restaurant: Raest, entirely dedicated to traditional Faroese fermented foods. Ræst means fermented in Faroese. Unlike the wet fermenting process for yogurt and pickled herring, the Faroes’ salty, brisk air creates ideal conditions for air-drying meat and fish, a process done in hjallur, food-drying sheds scattered across the islands. The restaurant itself is in Tórshavn, the capital, on the main island of Streymoy, in a creaky 400-year-old house that makes Ingmar Bergman sets look Baroque. The narrow dining room’s floors, walls and ceilings are built of salvaged driftwood. Communal tables seat 27 and are made from the reclaimed Douglas pine of an old schooner’s mast. A Delft stove once fueled by blubber oil sits in the corner. The menu includes cold fermented lamb soup with turnips, fermented cod and fermented lamb intestines, fermented colon on sauerkraut, Rhubarb porridge with cream of burned rosemary, and – for dessert – waffle, jam and milk.
+");
+  INSERT INTO dinfo (did, place, street, zipcode, city, description) VALUES ("5", "BARBARA FISH HOUSE", "Gongin 4-6", "FO-100", "Tórshavn", "Barbara Fish House, located in a cute house cut into the rocks, has a fantastic tasting menu, consisting of locally-caught Faroese seafood such as horse mussels and smoked salmon, fresh scallops and Bouillabaise poured from a teapot. If you want to try Faroese seafood, Barbara is the place to go.");
+ 
   
   
  -- SELECT * FROM hinfo;

@@ -227,7 +227,7 @@
 							<!-- Time picker -->
 							<p>
 								<label for="spinner6">Time:</label>
-								<input type="time" id="spinner6" name="spinner6" value="18:00">
+								<input type="time" id="spinner6" name="dStartTime" value="18:00">
 							</p>
 						</div>
 						<!-- Dining selector -->

@@ -28,6 +28,7 @@ $tEndTime = filter_input(INPUT_POST, 'tEndTime');
 $tId = filter_input(INPUT_POST, 'transportid');
 
 $dStart = filter_input(INPUT_POST, 'dStartDateVal');
+$dStartTime = filter_input(INPUT_POST, 'dStartTime');
 $dId = filter_input(INPUT_POST, 'diningid');
 
 require_once('dbcon.php');
@@ -110,9 +111,9 @@ if(isset($tId)){
 
 // Dining
 if(isset($dId)){
-	$sql = 'INSERT INTO dining (sdate, dining_id, customers_cid) VALUES (?, ?, ?);';
+	$sql = 'INSERT INTO dining (sdate, stime, dining_id, customers_cid) VALUES (?, ?, ?, ?);';
 	$stmt = $link->prepare($sql);
-	$stmt->bind_param('sii', $dStart, $dId, $kundeNummer);
+	$stmt->bind_param('ssii', $dStart, $dStartTime, $dId, $kundeNummer);
 	$stmt->execute();
 	// Car voucher upload
 	if(isset($_FILES['dupload'])):
