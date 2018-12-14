@@ -44,16 +44,20 @@ html, body {
      cursor:pointer!important;  
 }
 
-#links {
+.links {
     color: #008742!important;
     text-decoration: none!important;
 }
 
-#links:hover 
+.links:hover 
 {
      color: inherit!important; 
      text-decoration:none!important; 
      cursor:pointer!important;  
+}
+
+.voucher {
+	
 }
 
 #myBtn {

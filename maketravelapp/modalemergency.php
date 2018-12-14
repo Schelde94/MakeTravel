@@ -18,7 +18,7 @@
   			<div class="card-body">
     			<p class="card-text ml-1 text-center"><strong>Make Travel:</strong> +298 232100</p>
 				<p class="card-text ml-1 text-center"><strong>Emergency services:</strong> 1 1 2</p>
-				<p>
+				<p class="text-left">
 				Although the Faroe Islands are one of the safest countries in the world, travelling in the Faroe Islands might be different to what you are used to. It is important you are well aware of things like weather extremes, narrow, windy roads and different road rules before you begin your journey.<br><br>
 
 				Always bring appropriate equipment, whether it be for hiking, camping, diving or birdwatching. Read about the various equipment under the websites that discuss each activity. In any case, it is always a good idea to bring warm clothes and a device to use for communication.<br><br>

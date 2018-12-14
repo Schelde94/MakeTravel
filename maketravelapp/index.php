@@ -12,7 +12,7 @@
 	<?php include 'header.php';?>
 	<!-- header END -->
 	
-	<div class="container mb-5">
+	<div class="container mb-5 mt-5">
 		<form>
   			<div class="form-group row">
     			<label for="inputEmail3" class="col-sm-2 col-form-label text-white mt-5">Customer number</label>
