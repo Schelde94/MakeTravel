@@ -1,4 +1,4 @@
-<div class="container-fluid mt-4">
+<div class="container-fluid mt-5">
 	<div class="row justify-content-center">
 		<h1 class="logoname"><strong>make</strong>travel</h1>
 	</div>
