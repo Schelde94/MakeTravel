@@ -21,7 +21,7 @@
 		</div>
 	</div>
 	
-	<div class="container mb-5 mt-5 align-content-center">
+	<div class="container mb-5 mt-5">
 		
 		<form action="home.php" method="post">
   			<div class="form-group row">
