@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<title>Make Travel Admin</title>
+<title>Make Travel Companion</title>
 <!-- head -->		
 <?php include 'head.php';?>
 <!-- head END -->

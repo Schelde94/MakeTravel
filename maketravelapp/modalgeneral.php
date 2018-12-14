@@ -6,7 +6,7 @@
       <div class="modal-header bg-success text-white">
         <h5 class="modal-title" id="exampleModalCenterTitle">General information</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
+          <span aria-hidden="true"><i class="fas fa-times"></i></span>
         </button>
       </div>
 		

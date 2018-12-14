@@ -32,14 +32,26 @@ html, body {
 	border: none!important;
 }
 
-a {
+#footer {
     color: inherit!important;
     text-decoration: none!important;
 }
 
-a:hover 
+#footer:hover 
 {
      color:white!important; 
+     text-decoration:none!important; 
+     cursor:pointer!important;  
+}
+
+#links {
+    color: #008742!important;
+    text-decoration: none!important;
+}
+
+#links:hover 
+{
+     color: inherit!important; 
      text-decoration:none!important; 
      cursor:pointer!important;  
 }

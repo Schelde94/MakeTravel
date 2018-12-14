@@ -6,7 +6,7 @@
       <div class="modal-header bg-success text-white">
         <h5 class="modal-title" id="exampleModalCenterTitle">Excursions information</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
+          <span aria-hidden="true"><i class="fas fa-times"></i></span>
         </button>
       </div>
       <div class="modal-body">
@@ -22,7 +22,7 @@
 				<p class="card-text ml-1">We drive from Tórshavn at the old mountain road to Norðadalsskarð, where you will have a nice view over the island of Koltur. Continue through the valley of Kollafjarðadal to Leynar, and through the subsea tunnel, under Vestmannasund to Vágar, and the villages Sandavág, Miðvág and Sørvág. We'll stop at the airport before heading to Bø and Gásadal, from where you will have an incredible view of Tindhólm and Mykines.<br><br>
 
 				You will be picked up at your hotel shortly before the tour starts, and returned after it's over.</p>
-				<a href="#" class="btn btn-success btn-sm ml-1 mb-3 rounded-0">See Voucher</a>
+				<a href="#" class="btn btn-success ml-1 mb-3 rounded-0">See Voucher</a>
   			</div>
   			<div class="card-footer text-muted bg-light text-center">
     			<p>Last updated: insert date</p>
@@ -39,7 +39,7 @@
   			<div class="card-body">
     			<p class="card-text ml-1 lead">Make Travel arrange a wide variety of excursions and experiences, and guarantee the best personal service.</p>
 				<p class="card-text ml-1 lead">Do you have questions or are in need of inspiration to a new adventure, then let Make Travel help you.</p>
-				<h5 class="card-text ml-1"><strong>Get in touch by emailing us here:<a href="mailto:make@make.fo"> make@make.fo</a> or by telephone: +298 232100 (FO) / +45 27771234 (DK)</strong></h5>
+				<h5 class="card-text ml-1"><strong>Get in touch by emailing us here:<a id="links" href="mailto:make@make.fo"> make@make.fo</a> or by telephone: +298 232100 (FO) / +45 27771234 (DK)</strong></h5>
   			</div>
   			<div class="card-footer text-muted bg-light text-center">
     			<p>Make Travel</p>
