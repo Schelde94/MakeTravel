@@ -23,21 +23,21 @@
 					<h3>&nbsp;&nbsp;Kunde</h3>
 					<div class="col-auto rounded-0">
 						<label for="fornavn">Fornavn</label>
-						<input type="text" name="firstname" class="form-control mb-4 rounded-0" id="fornavn" aria-describedby="emailHelp" placeholder="Skriv fornavn her" required>
+						<input type="text" name="firstname" class="form-control mb-4 rounded-0 inputfelt" id="fornavn" aria-describedby="emailHelp" placeholder="Skriv fornavn her" required>
 						<label for="efternavn">Efternavn</label>
-						<input type="text" name="lastname" class="form-control mb-4 rounded-0" id="efternavn" aria-describedby="emailHelp" placeholder="Skriv efternavn her" required>
+						<input type="text" name="lastname" class="form-control mb-4 rounded-0 inputfelt" id="efternavn" aria-describedby="emailHelp" placeholder="Skriv efternavn her" required>
 						<label for="kundenummer">Kunde nr.</label>
-						<input type="number" name="cid" class="form-control mb-5 rounded-0" id="kundenummer" aria-describedby="emailHelp" placeholder="Skriv kundernummer her" required>
+						<input type="number" name="cid" class="form-control mb-5 rounded-0 inputfelt" id="kundenummer" aria-describedby="emailHelp" placeholder="Skriv kundenummer her" required>
 					</div>
 					<!-- Flight info -->
 					<h3>&nbsp;&nbsp;Fly</h3>
 					<div>
 						<label for="flytil">Flynummer til</label>
-						<input type="text" name="fto" class="form-control mb-4 rounded-0" id="flytil" aria-describedby="emailHelp" placeholder="Flynummer til destination" required>
+						<input type="text" name="fto" class="form-control mb-4 rounded-0 inputfelt" id="flytil" aria-describedby="emailHelp" placeholder="Flynummer til destination" required>
 						<label for="flyfra">Flynummer fra</label>
-						<input type="text" name="ffrom" class="form-control mb-4 rounded-0" id="flyfra" aria-describedby="emailHelp" placeholder="Flynummer fra destination" required>
+						<input type="text" name="ffrom" class="form-control mb-4 rounded-0 inputfelt" id="flyfra" aria-describedby="emailHelp" placeholder="Flynummer fra destination" required>
 						<label for="exampleInputEmail1">Upload billetter</label>
-						<input type="file" name="fupload" class="form-control-file mb-5 rounded-0" id="exampleFormControlFile6">
+						<input type="file" name="fupload" class="form-control-file mb-5 rounded-0 inputfelt" id="exampleFormControlFile6">
 					</div>
 					<!-- Hotel info -->
 					<h3>&nbsp;&nbsp;Hotel</h3>
@@ -53,7 +53,7 @@
 						</div>
 						<div class="row mb-5">
 							<label for="inlineFormCustomSelect4">Hotel</label>
-							<select class="custom-select mr-sm-2 mb-3 rounded-0" name="hotelid" id="inlineFormCustomSelect4">
+							<select class="custom-select mr-sm-2 mb-3 rounded-0 inputfelt" name="hotelid" id="inlineFormCustomSelect4">
 								<option selected>Vælg hotel</option>
 								<?php
 									require_once('dbcon.php');
@@ -69,7 +69,7 @@
 							</select>
 						<!-- Hotel booking upload -->
 						<label for="exampleFormControlFile5">Upload voucher</label>
-    					<input type="file" class="form-control-file" name="hupload" id="exampleFormControlFile5">
+    					<input type="file" class="form-control-file inputfelt" name="hupload" id="exampleFormControlFile5">
 						</div>
 					</div>
 					<!-- Car rental info -->
@@ -84,7 +84,7 @@
 							<!-- Time picker -->
 							<p>
 								<label for="spinner1">Time:</label>
-								<input type="time" id="spinner1" name="cStartTime" value="18:00">
+								<input class="inputfelt" type="time" id="spinner1" name="cStartTime" value="18:00">
 							</p>
 						</div>
 						<!-- End date and time -->
@@ -96,13 +96,13 @@
 							<!-- Time picker -->
 							<p>
 								<label for="spinner2">Time:</label>
-								<input type="time" id="spinner2" name="cEndTime" value="18:00">
+								<input class="inputfelt" type="time" id="spinner2" name="cEndTime" value="18:00">
 							</p>
 						</div>
 						<!-- Car selector -->
 						<div class="row mb-5">
 							<label for="inflineFormCustomSelect3">Bil</label>
-							<select class="col-auto custom-select mr-sm-2 mb-3 rounded-0" name="carid" id="inlineFormCustomSelect3">
+							<select class="col-auto custom-select mr-sm-2 mb-3 rounded-0 inputfelt" name="carid" id="inlineFormCustomSelect3">
 								<option selected>Vælg bil type</option>
 								<?php
 									require_once('dbcon.php');
@@ -119,7 +119,7 @@
 
 							<!-- Car voucher upload -->
 							<label for="exampleInputEmail1">Upload voucher</label>
-							<input type="file" class="form-control-file" name="cupload" id="exampleFormControlFile1">
+							<input type="file" class="form-control-file inputfelt" name="cupload" id="exampleFormControlFile1">
 						</div>
 					</div>
 					<!-- Excursion info -->
@@ -134,13 +134,13 @@
 							<!-- Time picker -->
 							<p>
 								<label for="spinner3">Time:</label>
-								<input type="time" id="spinner3" name="eStartTime" value="18:00">
+								<input class="inputfelt" type="time" id="spinner3" name="eStartTime" value="18:00">
 							</p>
 						</div>
 						<!-- Excursion selector -->
 						<div class="row mb-5">
 							<label for="exampleInputEmail1">Oplevelse</label>
-							<select class="col-auto custom-select mr-sm-2 mb-3 rounded-0" name="experienceid" id="inlineFormCustomSelect2">
+							<select class="col-auto custom-select mr-sm-2 mb-3 rounded-0 inputfelt" name="experienceid" id="inlineFormCustomSelect2">
 								<option selected>Vælg oplevelse</option>
 								<?php
 									require_once('dbcon.php');
@@ -156,7 +156,7 @@
 							</select>
 							<!-- Experience voucher upload -->
 							<label for="exampleFormControlFile2">Upload voucher</label>
-							<input type="file" class="form-control-file" name="eupload" id="exampleFormControlFile2">
+							<input type="file" class="form-control-file inputfelt" name="eupload" id="exampleFormControlFile2">
 						</div>
 					</div>
 					<!-- Transport info -->
@@ -171,7 +171,7 @@
 							<!-- Time picker -->
 							<p>
 								<label for="spinner4">Time:</label>
-								<input type="time" id="spinner4" name="tStartTime" value="18:00">
+								<input class="inputfelt" type="time" id="spinner4" name="tStartTime" value="18:00">
 							</p>
 						</div>
 						<!-- End date and time -->
@@ -183,13 +183,13 @@
 							<!-- Time picker -->
 							<p>
 								<label for="spinner5">Time:</label>
-								<input type="time" id="spinner5" name="tEndTime" value="18:00">
+								<input class="inputfelt" type="time" id="spinner5" name="tEndTime" value="18:00">
 							</p>
 						</div>
 						<!-- Transport selector -->
 						<div class="row mb-5">
 							<label for="exampleInputEmail1">Transport</label>
-							<select class="col-auto custom-select mr-sm-2 mb-3 rounded-0" name="transportid" id="inlineFormCustomSelect">
+							<select class="col-auto custom-select mr-sm-2 mb-3 rounded-0 inputfelt" name="transportid" id="inlineFormCustomSelect">
 								<option selected>Vælg transport type</option>
 								<?php
 									require_once('dbcon.php');
@@ -206,7 +206,7 @@
 							</select>
 							<!-- Transport voucher uploader -->
 							<label for="exampleInputEmail1">Upload voucher</label>
-							<input type="file" class="form-control-file" name="tupload" id="exampleFormControlFile2">
+							<input type="file" class="form-control-file inputfelt" name="tupload" id="exampleFormControlFile2">
 						</div>
 					</div>
 					<!-- Dining info -->
@@ -221,13 +221,13 @@
 							<!-- Time picker -->
 							<p>
 								<label for="spinner6">Time:</label>
-								<input type="time" id="spinner6" name="dStartTime" value="18:00">
+								<input class="inputfelt" type="time" id="spinner6" name="dStartTime" value="18:00">
 							</p>
 						</div>
 						<!-- Dining selector -->
 						<div class="row mb-5">
 							<label for="exampleInputEmail1">Spisested</label>
-							<select class="col-auto custom-select mr-sm-2 mb-3 rounded-0" name="diningid" id="inlineFormCustomSelect1">
+							<select class="col-auto custom-select mr-sm-2 mb-3 rounded-0 inputfelt" name="diningid" id="inlineFormCustomSelect1">
 								<option selected>Vælg spisested</option>
 								<?php
 									require_once('dbcon.php');
@@ -243,7 +243,7 @@
 							</select>
 							<!-- Dining voucher upload -->
 							<label for="exampleInputEmail1">Upload voucher</label>
-							<input type="file" class="form-control-file" name="dupload" id="exampleFormControlFile4">
+							<input type="file" class="form-control-file inputfelt" name="dupload" id="exampleFormControlFile4">
 						</div>
 					</div>
 				</div> <!-- Accordion ends -->

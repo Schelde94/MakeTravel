@@ -46,8 +46,8 @@
     			<h3 class="card-title">Need a rental car?</h3>
   			</div>
   			<div class="card-body text-left">
-    			<p class="card-text ml-1 lead">Make Car Rental offers you the newest fleet of cars, and guarantee the best personal service.</p>
-				<p class="card-text ml-1 lead">All our prices are inlcuded free kilometers, all normal insurances (hull, theft and personal accident isurance) and VAT.</p>
+    			<p class="card-text ml-1">Make Car Rental offers you the newest fleet of cars, and guarantee the best personal service.</p>
+				<p class="card-text ml-1">All our prices are inlcuded free kilometers, all normal insurances (hull, theft and personal accident isurance) and VAT.</p>
 				<h5 class="card-text ml-1"><strong>Book a rental car on the Faroe Islands with Make Car Rental on email: <a class="links" href="mailto:car@make.fo">car@make.fo</a> or call us at tel. +298 23 21 03 (FO) or +45 2777 1234 (DK)</strong></h5>
 			</div>
   			<div class="card-footer text-muted bg-light text-center">

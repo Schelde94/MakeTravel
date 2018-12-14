@@ -47,7 +47,7 @@
     			<h3 class="card-title">Need a hotel room?</h3>
   			</div>
   			<div class="card-body text-left">
-    			<p class="card-text ml-1 lead">If you have a request for accomodation, Make Travel can help you and guarantee the best personal service.</p>
+    			<p class="card-text ml-1">If you have a request for accomodation, Make Travel can help you and guarantee the best personal service.</p>
 				<h5 class="card-text ml-1"><strong>If you need any information or guidance on accommodation, then please contact us at <a class="links" href="mailto:make@make.fo">make@make.fo</a>  or by telephone: +298 232100 (FO) / +45 27771234 (DK)</strong></h5>
   			</div>
   			<div class="card-footer text-muted bg-light text-center">
