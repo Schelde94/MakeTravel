@@ -12,10 +12,23 @@
 	<?php include 'header.php';?>
 	<!-- header END -->
 		
+	<?php
+	
+	$kundenummer = filter_input(INPUT_POST, 'kundenummer');
+	
+	require_once('dbcon.php');
+	$sql = 'SELECT cid, firstname FROM customers';
+	$stmt = $link->prepare($sql);
+	$stmt->execute();
+	$stmt->bind_result($cid, $cfnam);
+	while($stmt->fetch()){
+		if($kundenummer==$cid){
+	?>
 	<div class="container-fluid">
 		<div class="row justify-content-around">
-			<h3 class="text-center col-sm text-white mb-2 mt-4">Welcome John!</h3>
+			<h3 class="text-center col-sm text-white mb-2 mt-4">Welcome <?=$cfnam?>!</h3>
 		</div>	
+		<?php }}?>
 		<div class="row justify-content-around">
 			<p class="lead text-center col-sm text-white mb-4 mt-2">All your files are inlcuded in the sections below.<br>Click on the sections to see vouchers and more detailed information.</p>
 		</div>
