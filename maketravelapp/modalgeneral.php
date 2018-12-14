@@ -6,7 +6,7 @@
       <div class="modal-header bg-success text-white">
         <h5 class="modal-title" id="exampleModalCenterTitle">General information</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
+          <span aria-hidden="true"><i class="fas fa-times"></i></span>
         </button>
       </div>
 		
@@ -29,9 +29,9 @@
     					<a class="nav-link" id="terms-tab" data-toggle="tab" href="#terms" role="tab" aria-controls="terms" aria-selected="false">Terms & Conditions</a>
   					</li>
 				</ul>
-				<div class="tab-content bg-white" id="myTabContent">
+				<div class="tab-content bg-white text-left" id="myTabContent">
   					<div class="tab-pane fade show active" id="general" role="tabpanel" aria-labelledby="general-tab">
-						<p class="col-auto">“The Faroe Islands? Yeah, they are close to Egypt, right?”<br><br>
+						<p class="col-auto"><br>“The Faroe Islands? Yeah, they are close to Egypt, right?”<br><br>
 
 						…not exactly.<br><br>
 
@@ -76,7 +76,7 @@
 					
   					<div class="tab-pane fade" id="terms" role="tabpanel" aria-labelledby="terms-tab">
 						<p class="col-auto">
-						Individual travellers<br><br>
+						<br>Individual travellers<br><br>
 
 						These are the terms and conditions you use when trading with Make Travel<br><br>
 

@@ -4,15 +4,9 @@
 		<meta charset="utf-8">
 		 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">	
 		<title>Make Travel Admin</title>	
-
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">	
-<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-<link rel="stylesheet" href="/resources/demos/style.css">
-<link href="https://fonts.googleapis.com/css?family=Exo+2:300,400,500,700" rel="stylesheet">
-	
-<link rel="stylesheet" href="styles.css">
-	
-<script src="timescripts.js"></script>
+		<!-- head -->		
+        <?php include 'head.php';?>
+        <!-- head END -->
     </head>
 
     <body>
@@ -21,12 +15,12 @@
         <!-- header END -->
 		
 		<!-- Content -->
-		<div class="container">
+		<div class="container mt-5">
 			<form action="createcustomer.php" method="post" enctype="multipart/form-data">
 				<!-- Accordion begins -->
 				<div class="form-group" id="accordion"> 
 					<!-- Customer info -->
-					<h3>Kunde</h3>
+					<h3>&nbsp;&nbsp;Kunde</h3>
 					<div class="col-auto rounded-0">
 						<label for="fornavn">Fornavn</label>
 						<input type="text" name="firstname" class="form-control mb-4 rounded-0" id="fornavn" aria-describedby="emailHelp" placeholder="Skriv fornavn her" required>
@@ -36,7 +30,7 @@
 						<input type="number" name="cid" class="form-control mb-5 rounded-0" id="kundenummer" aria-describedby="emailHelp" placeholder="Skriv kundernummer her" required>
 					</div>
 					<!-- Flight info -->
-					<h3>Fly</h3>
+					<h3>&nbsp;&nbsp;Fly</h3>
 					<div>
 						<label for="flytil">Flynummer til</label>
 						<input type="text" name="fto" class="form-control mb-4 rounded-0" id="flytil" aria-describedby="emailHelp" placeholder="Flynummer til destination" required>
@@ -46,7 +40,7 @@
 						<input type="file" name="fupload" class="form-control-file mb-5 rounded-0" id="exampleFormControlFile6">
 					</div>
 					<!-- Hotel info -->
-					<h3>Hotel</h3>
+					<h3>&nbsp;&nbsp;Hotel</h3>
 					<div>
 						<div class="row mb-5">
 							<label class="mr-3" for="hStartDate">Check ind</label>
@@ -79,7 +73,7 @@
 						</div>
 					</div>
 					<!-- Car rental info -->
-					<h3>Billeje</h3>
+					<h3>&nbsp;&nbsp;Billeje</h3>
 					<div>
 						<!-- Start date and time -->
 						<div class="row mb-5">
@@ -129,7 +123,7 @@
 						</div>
 					</div>
 					<!-- Excursion info -->
-					<h3>Oplevelser</h3>
+					<h3>&nbsp;&nbsp;Oplevelser</h3>
 					<div>
 						<!-- Start date and time -->
 						<div class="row mb-5">
@@ -166,7 +160,7 @@
 						</div>
 					</div>
 					<!-- Transport info -->
-					<h3>Transport</h3>
+					<h3>&nbsp;&nbsp;Transport</h3>
 					<div>
 						<!-- Start date and time -->
 						<div class="row mb-5">
@@ -216,7 +210,7 @@
 						</div>
 					</div>
 					<!-- Dining info -->
-					<h3>Spisesteder</h3>
+					<h3>&nbsp;&nbsp;Spisesteder</h3>
 					<div>
 						<!-- Start date and time -->
 						<div class="row mb-5">
@@ -257,17 +251,9 @@
 			</form>
 		</div>
         
-		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-
-		<script src="/resources/demos/external/globalize/globalize.js"></script>
-		<script src="/resources/demos/external/globalize/globalize.culture.de-DE.js"></script>
-		<script src="/resources/demos/external/jquery-mousewheel/jquery.mousewheel.js"></script>		
-
-		<script src="scripts.js"></script>
+		<!-- header -->		
+        <?php include 'footer.php';?>
+        <!-- header END -->
         
 	</body>
 </html>
