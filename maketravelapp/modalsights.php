@@ -46,12 +46,10 @@ $kundenummer = filter_input(INPUT_POST, 'kundenummer');
     			<h3 class="card-title"><?=$ename?></h3>
   			</div>
   			<div class="card-body text-left">
-				<p class="card-text ml-1"><strong>Departure:</strong> 12.30 - 01/12/18</p>
-    			<p class="card-text ml-1">Visit probably the most beautiful island of the faroese, with multiple stops for amazing pictures.</p>
-				<p class="card-text ml-1"><strong>Price includes:</strong> &nbsp;bus and guide.</p>
-				<p class="card-text ml-1">We drive from Tórshavn at the old mountain road to Norðadalsskarð, where you will have a nice view over the island of Koltur. Continue through the valley of Kollafjarðadal to Leynar, and through the subsea tunnel, under Vestmannasund to Vágar, and the villages Sandavág, Miðvág and Sørvág. We'll stop at the airport before heading to Bø and Gásadal, from where you will have an incredible view of Tindhólm and Mykines.<br><br>
-
-				You will be picked up at your hotel shortly before the tour starts, and returned after it's over.</p>
+				<p class="card-text ml-1"><strong>Departure: </strong><?=$stime?> - <?=$sdate?></p>
+    			<p class="card-text ml-1"><?=$shortdesc?></p>
+				<p class="card-text ml-1"><?=$longdesc?></p>
+				
 				<a href="#" class="btn btn-success ml-1 mb-3 rounded-0 col align-self-center">See Voucher</a>
   			</div>
   			<div class="card-footer text-muted bg-light text-center">
