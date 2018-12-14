@@ -1,8 +1,4 @@
 <!doctype html>
-
-<?php
-$kundenummer = filter_input(INPUT_POST, 'kundenummer');
-?>
 <!-- modal hotel -->		
 <div class="modal fade bd-example-modal-lg hotel" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
@@ -18,7 +14,7 @@ $kundenummer = filter_input(INPUT_POST, 'kundenummer');
 		$sql = 'SELECT sdate, edate, customers.cid, hinfo.hid, hinfo.place, hinfo.street, hinfo.zipcode, hinfo.city, hinfo.checkin, hinfo.checkout, hinfo.description, hinfo.link FROM customers, hotel, hinfo WHERE customers_cid=customers.cid AND hotel_id=hinfo.hid;';
 		$stmt = $link->prepare($sql);
 		$stmt->execute();
-		$stmt->bind_result($sDate, $eDate, $cid, $hid, $place, $street, $zipcode, $city, $checkin, $checkout, $description, $link);
+		$stmt->bind_result($sdate, $edate, $cid, $hid, $place, $street, $zipcode, $city, $checkin, $checkout, $description, $link);
 		while($stmt->fetch()){
 			
 			if($kundenummer==$cid){
@@ -73,7 +69,7 @@ $kundenummer = filter_input(INPUT_POST, 'kundenummer');
   			</div>
   			<div class="card-body text-left">
     			<p class="card-text ml-1"><strong>Address: </strong><?=$street?> , <?=$zipcode?> <?=$city?></p>
-				<p class="card-text ml-1"><strong>Check in date: </strong><?=date("d-m-Y", strtotime($sDate))?> &nbsp;<strong>Check out date: </strong><?=date("d-m-Y", strtotime($eDate))?></p>
+				<p class="card-text ml-1"><strong>Check in date: </strong><?=date("d-m-Y", strtotime($sdate))?> &nbsp;<strong>Check out date: </strong><?=date("d-m-Y", strtotime($edate))?></p>
 				<p class="card-text ml-1"><?=$description?></p>
 				
 				Read more about the hotel <a class="links" href="https://www.make.fo/en/where-to-stay/hotels/<?=$link?>/" target="_blank">HERE!</a><br><br>

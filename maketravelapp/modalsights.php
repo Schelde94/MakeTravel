@@ -1,7 +1,4 @@
 <!doctype html>
-<?php
-$kundenummer = filter_input(INPUT_POST, 'kundenummer');
-?>
 <!-- modal hotel -->		
 <div class="modal fade bd-example-modal-lg sights" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
