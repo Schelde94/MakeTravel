@@ -13,13 +13,18 @@ $hId = filter_input(INPUT_POST, 'hotelid');
 
 $cStart = filter_input(INPUT_POST, 'cStartDateVal');
 $cEnd = filter_input(INPUT_POST, 'cEndDateVal');
+$cStartTime = filter_input(INPUT_POST, 'cStartTime');
+$cEndTime = filter_input(INPUT_POST, 'cEndTime');
 $cId = filter_input(INPUT_POST, 'carid');
 
 $eStart = filter_input(INPUT_POST, 'eStartDateVal');
+$eStartTime = filter_input(INPUT_POST, 'eStartTime');
 $eId = filter_input(INPUT_POST, 'experienceid');
 
 $tStart = filter_input(INPUT_POST, 'tStartDateVal');
 $tEnd = filter_input(INPUT_POST, 'tEndDateVal');
+$tStarTime = filter_input(INPUT_POST, 'tStartTime');
+$tEndTime = filter_input(INPUT_POST, 'tEndTime');
 $tId = filter_input(INPUT_POST, 'transportid');
 
 $dStart = filter_input(INPUT_POST, 'dStartDateVal');
@@ -63,9 +68,9 @@ if(isset($hId)){
 
 // Car booking
 if(isset($cId)){
-	$sql = 'INSERT INTO cars (sdate, edate, car_id, customers_cid) VALUES (?, ?, ?, ?);';
+	$sql = 'INSERT INTO cars (sdate, edate, stime, etime, car_id, customers_cid) VALUES (?, ?, ?, ?, ?, ?);';
 	$stmt = $link->prepare($sql);
-	$stmt->bind_param('ssii', $cStart, $cEnd, $cId, $kundeNummer);
+	$stmt->bind_param('ssssii', $cStart, $cEnd, $cStartTime, $cEndTime, $cId, $kundeNummer);
 	$stmt->execute();
 	// Car voucher upload
 	if(isset($_FILES['cupload'])):
@@ -77,11 +82,11 @@ if(isset($cId)){
 
 // Experiences
 if(isset($eId)){
-	$sql = 'INSERT INTO exp (sdate, exp_id, customers_cid) VALUES (?, ?, ?);';
+	$sql = 'INSERT INTO exp (sdate, stime, exp_id, customers_cid) VALUES (?, ?, ?, ?);';
 	$stmt = $link->prepare($sql);
-	$stmt->bind_param('sii', $eStart, $eId, $kundeNummer);
+	$stmt->bind_param('ssii', $eStart, $eStartTime, $eId, $kundeNummer);
 	$stmt->execute();
-	// Car voucher upload
+	// Exp upload
 	if(isset($_FILES['eupload'])):
 	$tmp_name = $_FILES['eupload']['tmp_name'];
 	$new_name = 'uploads/exp/' . 'exp' . $kundeNummer . '.pdf';
@@ -91,9 +96,9 @@ if(isset($eId)){
 
 // Transport
 if(isset($tId)){
-	$sql = $sql = 'INSERT INTO trans (sdate, edate, trans_id, customers_cid) VALUES (?, ?, ?, ?);';
+	$sql = $sql = 'INSERT INTO trans (sdate, edate, stime, etime, trans_id, customers_cid) VALUES (?, ?, ?, ?, ?, ?);';
 	$stmt = $link->prepare($sql);
-	$stmt->bind_param('ssii', $tStart, $tEnd, $tId, $kundeNummer);
+	$stmt->bind_param('ssssii', $tStart, $tEnd, $tStarTime, $tEndTime, $tId, $kundeNummer);
 	$stmt->execute();
 	// Transport voucher upload
 	if(isset($_FILES['tupload'])):
@@ -104,10 +109,10 @@ if(isset($tId)){
 }
 
 // Dining
-if(isset($eId)){
+if(isset($dId)){
 	$sql = 'INSERT INTO dining (sdate, dining_id, customers_cid) VALUES (?, ?, ?);';
 	$stmt = $link->prepare($sql);
-	$stmt->bind_param('sii', $eStart, $eId, $kundeNummer);
+	$stmt->bind_param('sii', $dStart, $dId, $kundeNummer);
 	$stmt->execute();
 	// Car voucher upload
 	if(isset($_FILES['dupload'])):

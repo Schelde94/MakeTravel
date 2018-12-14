@@ -96,7 +96,7 @@
 							<!-- Time picker -->
 							<p>
 								<label for="spinner1">Time:</label>
-								<input type="time" id="spinner1" name="spinner1" value="18:00">
+								<input type="time" id="spinner1" name="cStartTime" value="18:00">
 							</p>
 						</div>
 						<!-- End date and time -->
@@ -108,7 +108,7 @@
 							<!-- Time picker -->
 							<p>
 								<label for="spinner2">Time:</label>
-								<input type="time" id="spinner2" name="spinner2" value="18:00">
+								<input type="time" id="spinner2" name="cEndTime" value="18:00">
 							</p>
 						</div>
 						<!-- Car selector -->
@@ -146,7 +146,7 @@
 							<!-- Time picker -->
 							<p>
 								<label for="spinner3">Time:</label>
-								<input type="time" id="spinner3" name="spinner3" value="18:00">
+								<input type="time" id="spinner3" name="eStartTime" value="18:00">
 							</p>
 						</div>
 						<!-- Excursion selector -->
@@ -183,7 +183,7 @@
 							<!-- Time picker -->
 							<p>
 								<label for="spinner4">Time:</label>
-								<input type="time" id="spinner4" name="spinner4" value="18:00">
+								<input type="time" id="spinner4" name="tStartTime" value="18:00">
 							</p>
 						</div>
 						<!-- End date and time -->
@@ -195,7 +195,7 @@
 							<!-- Time picker -->
 							<p>
 								<label for="spinner5">Time:</label>
-								<input type="time" id="spinner5" name="spinner5" value="18:00">
+								<input type="time" id="spinner5" name="tEndTime" value="18:00">
 							</p>
 						</div>
 						<!-- Transport selector -->

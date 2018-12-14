@@ -63,6 +63,8 @@ CREATE TABLE IF NOT EXISTS `maketravel`.`cars` (
   `cid` INT(11) NOT NULL AUTO_INCREMENT,
   `sdate` DATE NULL DEFAULT NULL,
   `edate` DATE NULL DEFAULT NULL,
+  `stime` TIME NULL DEFAULT NULL,
+  `etime` TIME NULL DEFAULT NULL,
   `car_id` INT(11) NOT NULL,
   `customers_cid` INT(11) NOT NULL,
   PRIMARY KEY (`cid`),
@@ -92,6 +94,7 @@ CREATE TABLE IF NOT EXISTS `maketravel`.`dinfo` (
   `street` VARCHAR(20) NULL DEFAULT NULL,
   `zipcode` VARCHAR(20) NULL DEFAULT NULL,
   `city` VARCHAR(20) NULL DEFAULT NULL,
+  `description` VARCHAR(850) NULL DEFAULT NULL,
   PRIMARY KEY (`did`))
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8;
@@ -103,6 +106,7 @@ DEFAULT CHARACTER SET = utf8;
 CREATE TABLE IF NOT EXISTS `maketravel`.`dining` (
   `did` INT(11) NOT NULL AUTO_INCREMENT,
   `sdate` DATE NULL DEFAULT NULL,
+  `stime` TIME NULL DEFAULT NULL,
   `dining_id` INT(11) NOT NULL,
   `customers_cid` INT(11) NOT NULL,
   PRIMARY KEY (`did`),
@@ -128,7 +132,11 @@ DEFAULT CHARACTER SET = utf8;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `maketravel`.`einfo` (
   `eid` INT(11) NOT NULL,
-  `ename` VARCHAR(20) NULL DEFAULT NULL,
+  `ename` VARCHAR(50) NULL DEFAULT NULL,
+  `shortdesc` VARCHAR(850) NULL DEFAULT NULL,
+  `longdesc` VARCHAR(2000) NULL DEFAULT NULL,
+  `adultprice` VARCHAR(50) NULL DEFAULT NULL,
+  `childprice` VARCHAR(50) NULL DEFAULT NULL,
   PRIMARY KEY (`eid`))
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8;
@@ -140,6 +148,7 @@ DEFAULT CHARACTER SET = utf8;
 CREATE TABLE IF NOT EXISTS `maketravel`.`exp` (
   `eid` INT(11) NOT NULL AUTO_INCREMENT,
   `sdate` DATE NULL DEFAULT NULL,
+  `stime` TIME NULL DEFAULT NULL,
   `exp_id` INT(11) NOT NULL,
   `customers_cid` INT(11) NOT NULL,
   PRIMARY KEY (`eid`),
@@ -185,10 +194,10 @@ DEFAULT CHARACTER SET = utf8;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `maketravel`.`hinfo` (
   `hid` INT(11) NOT NULL,
-  `place` VARCHAR(20) NULL DEFAULT NULL,
-  `street` VARCHAR(20) NULL DEFAULT NULL,
+  `place` VARCHAR(30) NULL DEFAULT NULL,
+  `street` VARCHAR(30) NULL DEFAULT NULL,
   `zipcode` VARCHAR(20) NULL DEFAULT NULL,
-  `city` VARCHAR(20) NULL DEFAULT NULL,
+  `city` VARCHAR(30) NULL DEFAULT NULL,
   `description` VARCHAR(850) NULL DEFAULT NULL,
   `checkin` VARCHAR(20) NULL DEFAULT NULL,
   `checkout` VARCHAR(20) NULL DEFAULT NULL,
@@ -243,6 +252,8 @@ CREATE TABLE IF NOT EXISTS `maketravel`.`trans` (
   `tid` INT(11) NOT NULL AUTO_INCREMENT,
   `sdate` DATE NULL DEFAULT NULL,
   `edate` DATE NULL DEFAULT NULL,
+  `stime` TIME NULL DEFAULT NULL,
+  `etime` TIME NULL DEFAULT NULL,
   `trans_id` INT(11) NOT NULL,
   `customers_cid` INT(11) NOT NULL,
   PRIMARY KEY (`tid`),
@@ -285,16 +296,19 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
   -- INSERT INTO hinfo (hid, place, street, zipcode, city) VALUES ("3", "Hotel Vágar", "Djúpheiðar 2", "FO-380", "Sørvágur");
   
   -- Cars
-  INSERT INTO cinfo (cid, brand, cname, category) VALUES ("1", "Citroen", "C1", "A");
-  INSERT INTO cinfo (cid, brand, cname, category) VALUES ("2", "Ople", "Corsa", "B");
-  INSERT INTO cinfo (cid, brand, cname, category) VALUES ("3", "Citroen", "C3", "C");
-  INSERT INTO cinfo (cid, brand, cname, category) VALUES ("4", "Citroen", "C4", "D");
-  INSERT INTO cinfo (cid, brand, cname, category) VALUES ("5", "Mitsubishi", "ASX", "M");
+  INSERT INTO cinfo (cid, brand, cname, category, description) VALUES ("1", "Citroen", "C1", "A", "2-4 passengers, trunk 196/780 l, manual gear, airbags, abs and 5 doors");
+  INSERT INTO cinfo (cid, brand, cname, category, description) VALUES ("2", "Opel", "Corsa", "B", "4 passengers, trunk 286 l, manual gear, airbags, abs and 5 doors");
+  INSERT INTO cinfo (cid, brand, cname, category, description) VALUES ("3", "Citroen", "C3", "C", "4-5 passengers, trunk 300/922 l, manual gear, airbags, abs and 5 doors");
+  INSERT INTO cinfo (cid, brand, cname, category, description) VALUES ("4", "Citroen", "C4", "D", "5 passengers, trunk 408 l, manual gear, airbags, abs og 5 doors");
+  INSERT INTO cinfo (cid, brand, cname, category, description) VALUES ("5", "Volvo", "V40", "M", "5 persons, 335/1444 l trunk, manual gear, airbags, ABS and 5 doors");
   
   -- Experiences
-  INSERT INTO einfo (eid, ename) VALUES ("1", "Bjergtur");
-  INSERT INTO einfo (eid, ename) VALUES ("2", "Sejltur");
-  INSERT INTO einfo (eid, ename) VALUES ("3", "Cykeltur");
+  INSERT INTO einfo (eid, ename, shortdesc, longdesc, adultprice, childprice) VALUES ("1", "Visit the island of Vágar", "Vist probably the most beautiful island of the faroese, with multiple stops for amazing pictures.", "We drive from Tórshavn at the old mountain road to Norðadalsskarð, where you will have a nice view over the island of Koltur. Continue through the valley of Kollafjarðadal to Leynar, and through the subsea tunnel, under Vestmannasund to Vágar, and the villages Sandavág, Miðvág and Sørvág. We'll stop at the airport before heading to Bø and Gásadal, from where you will have an incredible view of Tindhólm and Mykines. You will be picked up at your hotel shortly before the tour starts, and returned after it's over. Price includes bus and guide. Pick-up/drop-off: Hotel Føroyar, Hotel Hafnia, Hotel Tórshavn, Hotel Streym and the Bus Terminal - pls. indicate when booking.", "Adult DKK 600,-", "Children (u/12 years) DKK 300,-");
+  INSERT INTO einfo (eid, ename, shortdesc, longdesc, adultprice, childprice) VALUES ("2", "Mykines - the bird paradise", "A unique opportunity to visit the bird paradise on the island of Mykines.", "A day trip to the western most island on the Faroe Islands, Mykines - also called the bird paradise. Come within an arm's length of the Puffins, or perhaps the bigger bird the northern gannet, which can only be found on Mykines. You can choose to experience the small island community in the village, or put on your hiking boots and walk out to the islet, a trip which takes 1-2 hours. The tour is guided and lunch on Mykines is included. Price includes bus, boat, lunch and guide. Pick-up/drop-off: Hotel Føroyar, Hotel Hafnia, Hotel Tórshavn, Hotel Streym and the Bus Terminal - pls. indicate when booking.", "Adult DKK 1.495,-", "Children (u/12 years) DKK 750,-");
+  INSERT INTO einfo (eid, ename, shortdesc, longdesc, adultprice, childprice) VALUES ("3", "Horseback riding", "Experience the fantastic faroese nature with a guided tour on a horse. The tour is for both the inexperienced and the experienced.", "Join us for a tour in the fantastic faroese wild nature. The tour starts from the BERG staples located  in the outskirts of Tórshavn and from there you will be riding to valley of Havnadal. Then the tour goes up the mountain to Kleynisvarða. After that, the tour goes back to Tórshavn by the old trail, which was used before there were any roads. The tour takes between 1,5 to 2 hours and is well suited for both the experienced and inexperienced rider. This activity can be booked everyday of the week, but minimum a week in advance. Horse and guide is included in the price. NOTE! There is a weight limit of 95 kg.", "Adults: DKK 450,-", "Children (7-14 years): DKK 400,-");
+  INSERT INTO einfo (eid, ename, shortdesc, longdesc, adultprice, childprice) VALUES ("4", "Vestmanna birdcliffs", "See the majestic skyhigh birdcliffs north of Vestmanna.", "Here there will be something for all your senses. The sound birds, the whispers of the sea, the weather-beaten cliffs, and the sky touching the peaks. The boat slips into the caves and you get engulfed in darkness, and then a moment later you're out again. An incredible experience, that you have to try. The trip takes about 2 hours 15 minutes", "Adult DKK 295,-", "Children(u/13 years) DKK 150,-");
+  INSERT INTO einfo (eid, ename, shortdesc, longdesc, adultprice, childprice) VALUES ("5", "Cruise on the schooner Norðlýsið", "Enjoy a short cruise two-masted shooner.", "Large gorges, tall freestanding cliffs, caves and bird cliffs, surf and sunshine, shoals of fish and bird life. Klæmingsgjógv, Álvastakkur and Álvagjógv are the names of some of these incredible formations - an abundance of beauty and adventures. Are birdclifs, and perhaps seals and whales, high on your wishlisft of what you want to experience in the Faroe Islands? Then we can offer you this morning cruise! The trip takes 3 hours, and we sail close to the shore and the birdcliffs, where we'll have the opportunity to take pictures of the birds, the cliffs and even in the water. On this trip we will pass the lighthouse, that had utmost important role on the sea, Borðan. The faroese writer, composer and painter William Heinese, called the lighthouse The Lighthouse at the end of the world. The lighthouse was built in 1893 and was, just as the other houses there, cut and built from boulders taken from the local area. The lense is 2.82 meters in diameter, and with a weight of almost 4 tons, is the biggest in Europe, and one of the biggest in the world. Depending on the weather we usually have a short stay in the village of Nólsoy.
+", "Adult DKK 300,-", "Children (u/12 years) DKK 150,-");
   
   -- Transport
   INSERT INTO tinfo (tid, ttype) VALUES ("1", "Bus");
@@ -302,10 +316,11 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
   INSERT INTO tinfo (tid, ttype) VALUES ("3", "Helikopter");
   
   -- Dining
-  INSERT INTO dinfo (did, place, street, zipcode, city) VALUES ("1", "Restaurant 1", "Oyggjarvegur 45", "FO-100", "Tórshavn");
-  INSERT INTO dinfo (did, place, street, zipcode, city) VALUES ("2", "Restaurant 2", "Oyggjarvegur 45", "FO-100", "Tórshavn");
-  INSERT INTO dinfo (did, place, street, zipcode, city) VALUES ("3", "Restaurant 3", "Oyggjarvegur 45", "FO-100", "Tórshavn");
-  INSERT INTO dinfo (did, place, street, zipcode, city) VALUES ("4", "Restaurant 4", "Oyggjarvegur 45", "FO-100", "Tórshavn");
+  INSERT INTO dinfo (did, place, street, zipcode, city, description) VALUES ("1", "Restaurant 1", "Oyggjarvegur 45", "FO-100", "Tórshavn");
+  INSERT INTO dinfo (did, place, street, zipcode, city, description) VALUES ("2", "Restaurant 2", "Oyggjarvegur 45", "FO-100", "Tórshavn");
+  INSERT INTO dinfo (did, place, street, zipcode, city, description) VALUES ("3", "Restaurant 3", "Oyggjarvegur 45", "FO-100", "Tórshavn");
+  INSERT INTO dinfo (did, place, street, zipcode, city, description) VALUES ("4", "Restaurant 4", "Oyggjarvegur 45", "FO-100", "Tórshavn");
+  INSERT INTO dinfo (did, place, street, zipcode, city, description) VALUES ("4", "Restaurant 4", "Oyggjarvegur 45", "FO-100", "Tórshavn");
   
   
  -- SELECT * FROM hinfo;
@@ -315,7 +330,8 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
  -- SELECT * FROM dinfo;
   
   -- SELECT fto, ffrom, customers.cid, customers.firstname, customers.lastname FROM customers, flight WHERE customers_cid=customers.cid;
-  SELECT sdate, edate, customers.cid, hinfo.place, hinfo.street, hinfo.zipcode, hinfo.city, hinfo.description, hinfo.checkin, hinfo.checkout, hinfo.link FROM customers, hotel, hinfo WHERE customers_cid=customers.cid AND hotel_id=hinfo.hid;
+  -- SELECT sdate, edate, customers.cid, hinfo.place, hinfo.street, hinfo.zipcode, hinfo.city, hinfo.description, hinfo.checkin, hinfo.checkout, hinfo.link FROM customers, hotel, hinfo WHERE customers_cid=customers.cid AND hotel_id=hinfo.hid;
+ 
   
   SELECT * FROM customers;
   SELECT * FROM flight;
