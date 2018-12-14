@@ -15,7 +15,7 @@
         <!-- header END -->
 		
 		<!-- Content -->
-		<div class="container mt-5">
+		<div class="container mt-5 mb-5">
 			<form action="createcustomer.php" method="post" enctype="multipart/form-data">
 				<!-- Accordion begins -->
 				<div class="form-group" id="accordion"> 
