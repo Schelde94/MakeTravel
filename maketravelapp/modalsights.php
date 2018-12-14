@@ -1,4 +1,7 @@
 <!doctype html>
+<?php
+$kundenummer = filter_input(INPUT_POST, 'kundenummer');
+?>
 <!-- modal hotel -->		
 <div class="modal fade bd-example-modal-lg sights" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
@@ -9,11 +12,38 @@
           <span aria-hidden="true"><i class="fas fa-times"></i></span>
         </button>
       </div>
+		<?php
+		require_once('dbcon.php');
+		$sql = 'SELECT sdate, stime, customers.cid, einfo.eid, einfo.ename, einfo.shortdesc, einfo.longdesc, einfo.adultprice, einfo.childprice FROM customers, exp, einfo WHERE customers_cid=customers.cid AND exp_id=einfo.eid;';
+		$stmt = $link->prepare($sql);
+		$stmt->execute();
+		$stmt->bind_result($sdate, $stime, $cid, $eid, $ename, $shortdesc, $longdesc, $adultprice, $childprice);
+		while($stmt->fetch()){
+			if($kundenummer==$cid){
+		?>
       <div class="modal-body">
       	<div class="card text-center">
-			<img class="card-img-top img-fluid rounded-0" id="car" src="content/excursions/islands_sm.png" alt="Card image cap">
+			<img class="card-img-top img-fluid rounded-0" id="car" src="content/excursions/<?php
+			switch($eid){
+					case "1":
+						echo "islands_sm.png";
+						break;
+					case "2":
+						echo "mykines_sm.png";
+						break;
+					case "3":
+						echo "horse_sm.png";
+						break;
+					case "4":
+						echo "bird-cliffs_sm.png";
+						break;
+					case "5":
+						echo "nordlysid_sm.png";
+						break;
+				}													
+			?>" alt="Card image cap">
   			<div class="card-header bg-dark text-white">
-    			<h3 class="card-title">Visit the island of Vágar</h3>
+    			<h3 class="card-title"><?=$ename?></h3>
   			</div>
   			<div class="card-body text-left">
 				<p class="card-text ml-1"><strong>Departure:</strong> 12.30 - 01/12/18</p>
@@ -29,6 +59,7 @@
   			</div>
 		</div>
       </div>	
+		<?php }}?>
 		
 	  <div class="modal-body">
       	<div class="card text-center">
