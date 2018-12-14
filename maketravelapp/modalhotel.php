@@ -9,16 +9,16 @@
           <span aria-hidden="true"><i class="fas fa-times"></i></span>
         </button>
       </div>
-		<?php 
+		<?php
 		require_once('dbcon.php');
-		$sql = 'SELECT sdate, edate, customers.cid, hinfo.hid, hinfo.place, hinfo.street, hinfo.zipcode, hinfo.city, hinfo.checkin, hinfo.checkout, hinfo.description, hinfo.link FROM customers, hotel, hinfo WHERE customers_cid=customers.cid AND hotel_id=hinfo.hid;';
+		$sql = 'SELECT sdate, edate, customers.cid, hinfo.hid, hinfo.place, hinfo.street, hinfo.zipcode, hinfo.city, hinfo.description, hinfo.checkin, hinfo.checkout, hinfo.link FROM customers, hotel, hinfo WHERE customers_cid=customers.cid AND hotel_id=hinfo.hid;';
 		$stmt = $link->prepare($sql);
 		$stmt->execute();
-		$stmt->bind_result($sdate, $edate, $cid, $hid, $place, $street, $zipcode, $city, $checkin, $checkout, $description, $link);
-		while($stmt->fetch()){
-			
-			if($kundenummer==$cid){
-		?>
+		$stmt->bind_result($sdate, $edate, $cid, $hid, $place, $street, $zipcode, $city, $desc, $checkin, $checkout, $link);
+		while($stmt->fetch()){				
+				if($kundenummer==$cid){
+		?>	
+		
 	  <div class="modal-body">
       	<div class="card text-center">
 			<img class="card-img-top img-fluid rounded-0" id="hotel" src="content/hotels/<?php
@@ -69,8 +69,8 @@
   			</div>
   			<div class="card-body text-left">
     			<p class="card-text ml-1"><strong>Address: </strong><?=$street?> , <?=$zipcode?> <?=$city?></p>
-				<p class="card-text ml-1"><strong>Check in date: </strong><?=date("d-m-Y", strtotime($sdate))?> &nbsp;<strong>Check out date: </strong><?=date("d-m-Y", strtotime($edate))?></p>
-				<p class="card-text ml-1"><?=$description?></p>
+				<p class="card-text ml-1"><strong>Check in date: </strong><?=$sdate?> &nbsp;<strong>Check out date: </strong><?=$edate?></p>
+				<p class="card-text ml-1"><?=$desc?></p>
 				
 				Read more about the hotel <a class="links" href="https://www.make.fo/en/where-to-stay/hotels/<?=$link?>/" target="_blank">HERE!</a><br><br>
 				
