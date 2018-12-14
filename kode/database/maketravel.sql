@@ -336,6 +336,8 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 -- SELECT sdate, edate, customers.cid, hinfo.hid, hinfo.place, hinfo.street, hinfo.zipcode, hinfo.city, hinfo.checkin, hinfo.checkout, hinfo.description, hinfo.link FROM customers, hotel, hinfo WHERE customers_cid=customers.cid AND hotel_id=hinfo.hid;
 -- SELECT sdate, edate, stime, etime, customers.cid, cinfo.cid, cinfo.brand, cinfo.cname, cinfo.description FROM customers, cars, cinfo WHERE customers_cid=customers.cid AND car_id=cinfo.cid;
 -- SELECT sdate, stime, customers.cid, einfo.eid, einfo.ename, einfo.shortdesc, einfo.longdesc, einfo.adultprice, einfo.childprice FROM customers, exp, einfo WHERE customers_cid=customers.cid AND exp_id=einfo.eid;
+-- SELECT sdate, edate, stime, etime, customers.cid, tinfo.tid, tinfo.ttype FROM customers, trans, tinfo WHERE customers_cid=customers.cid AND trans_id=tinfo.tid;
+-- SELECT sdate, stime, customers.cid, dinfo.did, dinfo.place, dinfo.street, dinfo.zipcode, dinfo.city, dinfo.description FROM customers, dining, dinfo WHERE customers_cid=customers.cid AND dining_id=dinfo.did;
 
   SELECT * FROM customers;
   SELECT * FROM flight;

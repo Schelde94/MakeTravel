@@ -35,6 +35,7 @@ $kundenummer = filter_input(INPUT_POST, 'kundenummer');
 					case "3":
 						echo "helicopter_sm.png";
 						break;
+				}
 			?>" alt="Card image cap">
   			<div class="card-header bg-dark text-white">
     			<h3 class="card-title"><?=$type?></h3>
