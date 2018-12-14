@@ -3,7 +3,7 @@
 		<h1 class="logoname"><strong>make</strong>travel</h1>
 	</div>
 	<div class="row justify-content-center mb-0">
-		<p class="lead">Tel. +298 232100</p><p class="lead">&nbsp;&nbsp;<a href="mailto:make@make.fo">make@make.fo</a></p>
+		<p class="lead">Tel. +298 232100</p><p class="lead">&nbsp;&nbsp;<a id="footer" href="mailto:make@make.fo">make@make.fo</a></p>
 	</div>
 </div>
 
