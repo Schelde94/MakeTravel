@@ -76,7 +76,7 @@
 
 
 
-					<a href="uploads/flights/<?='ft' . $kundenummer . '.pdf' ?>" target="_blank" class="btn btn-success btn-sm ml-1 mb-3 rounded-0">See Tickets</a>
+					<a href="uploads/flights/<?='ft' . $kundenummer . '.pdf' ?>" target="_blank" class="btn btn-success ml-1 mb-3 rounded-0 col align-self-center">See Tickets</a>
 				</div>
 				<?php } ?>
 				<?php } ?>

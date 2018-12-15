@@ -167,3 +167,13 @@ var myImg = document.getElementById("imgcar");
        i++;
        myImg.style.transform = "scale(1."+ i +")";
     }
+
+ymaps.ready(init);
+			var myMap;
+
+			function init(){     
+				myMap = new ymaps.Map("kort", {
+					center: [62.01, -6.78],
+					zoom: 8
+				});
+			};

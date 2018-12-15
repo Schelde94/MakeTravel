@@ -59,7 +59,7 @@
 					</div>
 					
   					<div class="tab-pane fade" id="driving" role="tabpanel" aria-labelledby="driving-tab">
-						<div class="embed-responsive embed-responsive-16by9 mt-5 mb-5">
+						<div class="embed-responsive embed-responsive-16by9 mt-4 mb-4">
   							<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/NhksvxPy1Pk?rel=0" allowfullscreen></iframe>
 						</div>
 						<div class="card-footer text-muted bg-light rounded-0 text-center">
@@ -68,7 +68,7 @@
 					</div>
 					
 					<div class="tab-pane fade" id="map" role="tabpanel" aria-labelledby="map-tab">
-						<div class="col embed-responsive" id="kort" style="height: 400px"></div>
+						<div class="col embed-responsive mt-4 mb-4" id="kort" style="height: 400px"></div>
 						<div class="card-footer text-muted bg-light rounded-0 text-center">
     						<p>Last updated: insert date</p>
   						</div>
