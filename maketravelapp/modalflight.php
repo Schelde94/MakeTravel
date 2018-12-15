@@ -31,7 +31,7 @@
 					<p class="card-text ml-1"><strong>Arrival:</strong></p>	
 					<?php 
 					// Arrival
-					//$aurl = 'http://aviation-edge.com/v2/public/timetable?key=9c035e-3feed4&iataCode=FAE&type=arrival';
+					$aurl = 'http://aviation-edge.com/v2/public/timetable?key=9c035e-3feed4&iataCode=FAE&type=arrival';
 					$adata = file_get_contents($aurl);
 					$aflights = json_decode($adata);
 					foreach ($aflights as $aflight){
@@ -53,7 +53,7 @@
 					<p class="card-text ml-1"><strong>Departure:</strong></p>	
 					<?php 
 					// Departure
-					//$durl = 'http://aviation-edge.com/v2/public/timetable?key=9c035e-3feed4&iataCode=FAE&type=departure';
+					$durl = 'http://aviation-edge.com/v2/public/timetable?key=9c035e-3feed4&iataCode=FAE&type=departure';
 					$ddata = file_get_contents($durl);
 					$dflights = json_decode($ddata);
 					foreach ($dflights as $dflight){
