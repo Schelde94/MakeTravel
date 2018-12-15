@@ -14,7 +14,7 @@
 		$sql = 'SELECT sdate, edate, customers.cid, hinfo.hid, hinfo.place, hinfo.street, hinfo.zipcode, hinfo.city, hinfo.description, hinfo.checkin, hinfo.checkout, hinfo.link FROM customers, hotel, hinfo WHERE customers_cid=customers.cid AND hotel_id=hinfo.hid;';
 		$stmt = $link->prepare($sql);
 		$stmt->execute();
-		$stmt->bind_result($sdate, $edate, $cid, $hid, $place, $street, $zipcode, $city, $desc, $checkin, $checkout, $link);
+		$stmt->bind_result($sdate, $edate, $cid, $hid, $place, $street, $zipcode, $city, $desc, $checkin, $checkout, $hlink);
 		while($stmt->fetch()){				
 				if($kundenummer==$cid){
 		?>	
@@ -72,13 +72,10 @@
 				<p class="card-text ml-1"><strong>Check in date: </strong><?=$sdate?> &nbsp;<strong>Check out date: </strong><?=$edate?></p>
 				<p class="card-text ml-1"><?=$desc?></p>
 				
-				Read more about the hotel <a class="links" href="https://www.make.fo/en/where-to-stay/hotels/<?=$link?>/" target="_blank">HERE!</a><br><br>
+				Read more about the hotel <a class="links" href="https://www.make.fo/en/where-to-stay/hotels/<?=$hlink?>/" target="_blank">HERE!</a><br><br>
 				
 				<a href="uploads/hotel/<?='hb' . $kundenummer . '.pdf' ?>" target="_blank" class="btn btn-success mb-3 rounded-0 col align-self-center">See Voucher</a>	
-				</p>
-				
-      			
-  			</div>
+			</div>
   			<div class="card-footer text-muted bg-light rounded-0 text-center">
     			<p>Last updated: insert date</p>
   			</div>

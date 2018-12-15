@@ -22,7 +22,7 @@
 	  <div class="modal-body">
       	<div class="card text-center">
 			<img class="card-img-top img-fluid rounded-0" id="car" src="content/cars/<?php
-					switch($carid){
+				switch($carid){
 					case "1":
 						echo "c1_sm.png";
 						break;
