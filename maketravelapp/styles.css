@@ -60,6 +60,7 @@ html, body {
 	font-family: 'Exo 2', sans-serif!important;
 }
 
+
 #myBtn {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
@@ -78,4 +79,10 @@ html, body {
 
 #myBtn:hover {
   background-color: #555; /* Add a dark-grey background on hover */
+}
+
+@media screen and (max-width: 576px) {
+  .linkbtn {
+    margin-top: 10px!important;
+  }
 }

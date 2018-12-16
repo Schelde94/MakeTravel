@@ -26,7 +26,7 @@
 	?>
 	<div class="container-fluid">
 		<div class="row justify-content-around">
-			<h3 class="text-center col-sm text-white mb-2 mt-4">Welcome <?=$cfnam?>!</h3>
+			<h3 class="text-center col-sm text-white mb-2 mt-4 logoname">Welcome <?=$cfnam?>!</h3>
 		</div>	
 		<?php }}?>
 		<div class="row justify-content-around">

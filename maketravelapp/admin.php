@@ -16,6 +16,13 @@
 		
 		<!-- Content -->
 		<div class="container mt-5 mb-5">
+			<div class="justify-content-around">
+				<h3 class="text-center col-sm text-white mb-2 logoname">Welcome!</h3>
+			</div>
+			<div class="justify-content-around">
+				<p class="lead text-center col-sm text-white mb-4 mt-2">Fill in the customer information below.</p>
+			</div>
+			
 			<form action="createcustomer.php" method="post" enctype="multipart/form-data">
 				<!-- Accordion begins -->
 				<div class="form-group" id="accordion"> 
@@ -249,6 +256,9 @@
 				</div> <!-- Accordion ends -->
 				<button type="submit" class="btn btn-dark btn-block mt-3 rounded-0">Submit</button>
 			</form>
+			<div class="mt-4" id="adminlink">
+				<a href="https://magnusmultimedia.dk/maketravel/" class="btn btn-secondary btn-sm rounded-0 col-sm-2">To Frontpage</a>
+			</div>
 		</div>
         
 		<!-- header -->		

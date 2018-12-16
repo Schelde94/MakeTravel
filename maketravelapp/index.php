@@ -25,11 +25,11 @@
 		
 		<form action="home.php" method="post">
   			<div class="form-group row">
-    			<label for="inputEmail3" class="col-sm-2 col-form-label text-white">Customer number</label>
+    			<label for="inputEmail3" class="col-sm-2 col-md col-lg col-form-label text-white">Customer number</label>
     			<div class="col-sm-8">
       				<input name="kundenummer" type="number" class="form-control rounded-0" id="inputEmail3" placeholder="Write your customer number here!">
     			</div>
-				<button type="submit" class="btn btn-dark col-sm-8 col-md mx-auto rounded-0">Log in</button>
+				<button type="submit" class="btn btn-dark col-6 col-md col-lg mx-auto rounded-0 linkbtn">Log in</button>
   			</div>
 		</form>
 	</div>
