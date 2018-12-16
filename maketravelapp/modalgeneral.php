@@ -54,7 +54,7 @@
 						The Faroese education system is well developed, with free primary and secondary schooling for all and a number of institutions for higher education and research. Many Faroe Islanders choose to study and work abroad during their younger years before returning home to settle.
 						</p>
 						<div class="card-footer text-muted bg-light rounded-0 text-center">
-    						<p>Last updated: insert date</p>
+    						<p>Make Travel &nbsp; +298 232100 &nbsp; <a class="links" href="mailto:make@make.fo">make@make.fo</a></p>
   						</div>
 					</div>
 					
@@ -63,14 +63,14 @@
   							<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/NhksvxPy1Pk?rel=0" allowfullscreen></iframe>
 						</div>
 						<div class="card-footer text-muted bg-light rounded-0 text-center">
-    						<p>Last updated: insert date</p>
+    						<p>Make Travel &nbsp; +298 232100 &nbsp; <a class="links" href="mailto:make@make.fo">make@make.fo</a></p>
   						</div>
 					</div>
 					
 					<div class="tab-pane fade" id="map" role="tabpanel" aria-labelledby="map-tab">
 						<div class="col embed-responsive mt-4 mb-4" id="kort" style="height: 400px"></div>
 						<div class="card-footer text-muted bg-light rounded-0 text-center">
-    						<p>Last updated: insert date</p>
+    						<p>Make Travel &nbsp; +298 232100 &nbsp; <a class="links" href="mailto:make@make.fo">make@make.fo</a></p>
   						</div>
 					</div>
 					

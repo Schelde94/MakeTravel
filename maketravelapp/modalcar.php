@@ -58,7 +58,7 @@
 
 				Deductible DKK 5.000,- per damage - which can be reduced to DKK 500,-, by signing an insurance (SCDW) at DKK 100,- per day.<br><br>
 
-				Read Make Car Rental's "Terms and Conditions" <a class="links" href="https://www.make.fo/en/who-are-we/terms-and-conditions/">HERE!</a>	</p>
+				Read Make Car Rental's "Terms and Conditions" <a class="links" target="_blank" href="https://www.make.fo/en/who-are-we/terms-and-conditions/">HERE!</a>	</p>
 				<a href="uploads/cars/<?='cb' . $kundenummer . '.pdf' ?>" target="_blank" class="btn btn-success ml-1 mb-3 rounded-0 col align-self-center">See Voucher</a>
   			</div>
   			<div class="card-footer text-muted bg-light text-center">
