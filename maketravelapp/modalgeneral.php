@@ -2,8 +2,8 @@
 <!-- modal hotel -->		
 <div class="modal fade bd-example-modal-lg general" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header bg-success text-white">
+    <div class="modal-content rounded-0">
+      <div class="modal-header bg-success text-white rounded-0">
         <h5 class="modal-title" id="exampleModalCenterTitle">General information</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true"><i class="fas fa-times"></i></span>
@@ -11,7 +11,7 @@
       </div>
 		
       <div class="modal-body bg-white">
-      	<div class="card text-start">
+      	<div class="card text-start rounded-0">
 			<img class="card-img-top img-fluid rounded-0" id="flight" src="img/general.PNG" alt="Card image cap">
   			<div class="card-header">
     			<h3 class="card-title"></h3>
@@ -162,7 +162,7 @@
 						Swift: EIKB FO TF<br><br>	
 						</p>
 						<div class="card-footer text-muted bg-light rounded-0 text-center">
-    						<p>Last updated: insert date</p>
+    						<p>Make Travel &nbsp; +298 232100 &nbsp; <a class="links" href="mailto:make@make.fo">make@make.fo</a></p>
   						</div>
 					</div>
 				</div>

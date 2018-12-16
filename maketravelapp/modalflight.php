@@ -2,8 +2,8 @@
 <!-- modal flight -->		
 <div class="modal fade bd-example-modal-lg fly" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header bg-success text-white">
+    <div class="modal-content rounded-0">
+      <div class="modal-header bg-success text-white rounded-0">
         <h5 class="modal-title" id="exampleModalCenterTitle">Flight Information</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true"><i class="fas fa-times"></i></span>
@@ -81,7 +81,7 @@
 				<?php } ?>
 				<?php } ?>
   			<div class="card-footer text-muted bg-light rounded-0 text-center">
-    			<p>Last updated: insert date</p>
+    			<p>Make Travel &nbsp; +298 232100 &nbsp; <a class="links" href="mailto:make@make.fo">make@make.fo</a></p>
   			</div>
 		</div>
       </div>
