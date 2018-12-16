@@ -33,7 +33,10 @@
 						echo "katrinachristiansen_sm.png";
 						break;
 					case "4":
-						echo "barbara-fish-house_sm.png";
+						echo "raest_sm.png";
+						break;
+					case "5":
+						echo "barbara_fish_house_sm.png";
 						break;
 				}
 			?>" alt="Card image cap">
